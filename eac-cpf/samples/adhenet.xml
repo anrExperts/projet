@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- TODO NOTA : Almanach de 1767 Il est qualifié de d'honoraire, adresse Rue des Poulies, anc. Hôtel de Conty. -->
+    <control>
+        <!-- recordID required -->
+        <recordId>EXPERTS_SAMPLE_FICTIF01</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <localControl localType="detailLevel">
+            <!-- niveau de détail de la notice -->
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-05-22"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <!-- possibilité de mettre les références bibliographiques sous l'espace de nom tei avec objectXMLWrap -->
+            <!-- NOTA : nous pouvons lier les sources à un vocabulaire contrôlé, TODO voir si c'est opportun. -->
+            <source xml:id="LP_adhenet">
+                <sourceEntry>Lettres de provisions de Adhenet, Thomas (8 janvier 1723)</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Lettres de provisions de Grissot, Jean (1756)</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN Y5274 — Registre de clôtures d'inventaires après décès fait au Châtelet de Paris de 1747 à 1756</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN Y4582 — Registres de tutelles</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Archives Nationales, Minutier central des notaires de Paris, LXXIX, 94, 18 octobre 1756, partage de La Faye / Fumerot</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Archives Nationales, Minutier central des notaires de Paris, LXXIX, 94, 18 octobre 1756, partage de La Faye / Fumerot</sourceEntry>
+            </source>
+            <!-- SIV Q° faire des renvois avec xLink ? -->
+            <source>
+                <sourceEntry>MC/ET/XXXIII/458, 1er février 1727</sourceEntry>
+                <descriptiveNote>
+                    <p>Partage concernant Thomas Adhenet, architecte juré expert, bourgeois de Paris, rue du Bac.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXXIII/458, 6 février 1727</sourceEntry>
+                <descriptiveNote>
+                    <p>Constitution concernant Thomas Adhenet, architecte juré expert, bourgeois de Paris, rue du Bac.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXXIII/458, 9 février 1727</sourceEntry>
+                <descriptiveNote>
+                    <p>Contrat de mariage de Thomas Adhenet, architecte juré expert, bourgeois de Paris, rue du Bac.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXXIII/473, 19 août 1734</sourceEntry>
+                <descriptiveNote>
+                    <p>Adhenet (Thomas) architecte ; à Paris § Procuration et Partage</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXVIII/243, 22 juin 1736</sourceEntry>
+                <descriptiveNote>
+                    <p>Constitution de rente par Louis-Jacques HERPIN, Maître sculpteur et Nicole LARDIN envers Alberic-François BARBIER, chirurgien, même jour, quittance par Thomas ADHENET, architecte à Paris, rue du Bac de 2500 livres remises par Louis Jacques HERPIN, maître sculpteur.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/VIII/1032, 28 septembre 1739</sourceEntry>
+                <descriptiveNote>
+                    <p>Compte entre la veuve de Charles-Gaspard Dodun, demeurant en son hôtel, rue Saint-Dominique, et les sieurs François Berthault, architecte entrepreneur, demeurant grande rue du faubourg Montmartre, et Thomas Adhenet, architecte juré expert bourgeois, demeurant rue du Bac, comme fondé de procuration de Charles Baudouin, architecte, demeurant à Orléans, rue du Colombier, et de Philippe Guilbois, officier de la duchesse d'Orléans, demeurant à Châteaudun, pour le règlement des dépenses faites par les sieurs Berthault, Baudouin et Guilbois, pour travaux de maçonnerie et autres, dans la construction du château d'Herbault, selon les devis et marché des 20 août 1720 et 1er décembre 1726, et en augmentation sur eux. Le total des sommes dues aux entrepreneurs se montait à 104.381 livres 18 sols 2 deniers (noter que tous les mémoires ont été arrêtés par Jules-Michel Hardouin, architecte du roi); le total des sommes déjà payées depuis le 1er février 1725 est de 85.246 livres 12 sols. Le restant, soit 19.135 livres 6 sols 7 deniers, a été réclamé par les entrepreneurs au moyen de sentences et sur procès-verbal d'experts; les entrepreneurs consentent finalement à sa réduction à 15.000 livres, somme qui leur est payée par ladite veuve Dodun et dont ils lui donnent quittance.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXXIII/489, 10 mai 1742</sourceEntry>
+                <descriptiveNote>
+                    <p>Adhenet (Thomas) architecte ; rue du Bac § Compte et de charge</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXIX/459, 9 mars 1743</sourceEntry>
+                <descriptiveNote>
+                    <p>ADHENET (Thomas) Architecte ; Cul de sac rue du Coq § Compte d'exécution</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXXIII/492, 6 septembre 1743</sourceEntry>
+                <descriptiveNote>
+                    <p>Délaissement concernant Thomas Adhenet, architecte, bourgeois de Paris, cul-de-sac du Coq.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXIII/537, 1er mars 1745</sourceEntry>
+                <descriptiveNote>
+                    <p>ADHENET (Thomas) Architecte ; Cul de sac du coq § Cahier de dépense (Succession Laideguive)</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XCII/550, 10 mai 1747</sourceEntry>
+                <descriptiveNote>
+                    <p>ADHENET (Thomas) architecte ; Cul de sac du Coq paroisse S. Germain l'Auxerrois. § Procureur de V. Lemur tanneur pour 1 compte avec la marquise de Tessé</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/LXXXV/527, 23 janvier 1751</sourceEntry>
+                <descriptiveNote>
+                    <p>Vente, dépôt de pieces, maison, plan de maison, Paris, rue-Charlot-au-Marais. + 22 janvier 1751, Resiliation de bail , maison, chantier.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>Bibliothèque nationale de France, Département des manuscrits, NAF 12038</sourceEntry>
+                <!-- http://gallica.bnf.fr/ark:/12148/btv1b10000514r/f150.item -->
+                <descriptiveNote>
+                    <p>Laborde, Léon, Répertoire alphabétique de noms d'artistes et artisans, des XVIe, XVIIe et XVIIIe siècles, relevés dans les anciens registres de l'État civil parisien par le marquis Léon de Laborde, dit « Fichier Laborde ».</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>adhenetT1690</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Adhenet</part>
+                <part localType="forename">Thomas</part>
+                <part localType="date">1690-</part>
+                <!-- ou alors :
+                    <part>Adhenet, Thomas (1690-)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <!-- Impossible d'utiliser <dateSet> car nous ne connaissons pas la date de mort -->
+                <date localType="naissance" standardDate="1690-11"/>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue du Parc</placeEntry>
+                    <date standardDate="1731-04-24"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, grand rue du Bac</placeEntry>
+                    <date standardDate="1740"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, cul-de-sac du Coq-Saint-Honoré</placeEntry>
+                    <!-- RMQ dateRange ne doit être utilisé uniquement lorsque que nous disposons des dates extrêmes -->
+                    <dateSet>
+                        <date standardDate="1743"/>
+                        <date standardDate="1756"/>
+                    </dateSet>
+                </place>
+            </places>
+            <!-- NOTA distinction entre fonctions et activités (professionnelles ou privées) -->
+            <functions localType="expert">
+                <function localType="verified">
+                    <term>Architecte expert bourgeois</term>
+                </function>
+                <function localType="sources">
+                    <term>Architecte juré expert entrepreneur de bâtiments à Paris</term>
+                    <dateRange>
+                        <fromDate standardDate="1723-01-08">Lettres de provisions du 8 janvier 1723</fromDate>
+                        <toDate notAfter="1756">Lettres de provisions de Jean Grissot (1756)</toDate>
+                    </dateRange>
+                    <!-- NOTA l'Almanach royal indique 1726 ? -->
+                    <!-- http://gallica.bnf.fr/ark:/12148/bpt6k1041371p/f394.image -->
+                </function>
+            </functions>
+            <!-- fonction principale (autre qu'expert) -->
+            <function localType="other">
+                <term>architecte</term>
+            </function>
+            <biogHist>
+                <!-- Q° Comment lier ces informations aux sources ? -->
+                <chronList>
+                    <!--NOTA : On ne peut pas lier les différents événements à un vocabulaire contrôlé -->
+                    <!-- Possibilité également de typer avec @localType -->
+                    <chronItem>
+                        <date standardDate="1722-12-24"/>
+                        <event>Thomas Adhenet a payé le droit de survivance de l’office aux revenus casuels (application de l’édit de déc. 1709) Il a été nommé et désigné par la veuve d’Etienne Le Roy, par acte du 24 décembre 1722.</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1723-01-08"/>
+                        <event>Lettres de provisions</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1756"/>
+                        <event>Thomas Adhenet démissionne en faveur de Jean Grissot</event>
+                    </chronItem>
+                    <!-- tuteur des enfants en  -->
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <!-- Q° Comment lier ces informations aux sources ? -->
+            <cpfRelation  xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <relationEntry>Lardin, Marie Anne</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <relationEntry>Adhenet, Marie Catherine Victoire</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <relationEntry>Adhenet, Charles</relationEntry>
+            </cpfRelation>
+            <!-- TODO vérifier la relation-->
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- aïeul maternel des enfants -->
+                <relationEntry>Lardin, Jean Baptiste</relationEntry>
+            </cpfRelation>
+            <!-- TODO vérifier la relation-->
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- Oncle maternel par Nicole Lardin (sa femme) à encoder également ? -->
+                <relationEntry>Herpin, Louis</relationEntry>
+            </cpfRelation>
+            <!-- amis -->
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
+                <relationEntry>Fremont, Jean</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
+                <relationEntry>Ferat, Nicolas</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
+                <relationEntry>Greban, Jean</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
+                <relationEntry>Bardon, Jérôme</relationEntry>
+            </cpfRelation>
+            
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/Relationship" xlink:type="simple">
+                <!-- Il a été nommé et désigné par la veuve d’Etienne Le Roy -->
+                <relationEntry>La veuve d'Étienne Le Roy</relationEntry>
+            </cpfRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

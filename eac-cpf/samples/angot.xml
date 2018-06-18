@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>EXPERTS_SAMPLE_FICTIF02</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-05-22"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2018-06-08"></eventDateTime>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>Lettres de provisions de Angot, Jean Pierre (16 septembre 1772)</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XCI/1103, 13 juillet 1772</sourceEntry>
+                <descriptiveNote>
+                    <p>ANGOT (Jean-Pierre) Entrepreneur de bâtiments § Achat par .. à M. Debias Aubry, architecte de l'office de Juré expert à Paris.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>État civil reconstitué / Paris (en ligne), V3E/D 19</sourceEntry>
+                <!-- http://archives.paris.fr/arkotheque/visionneuse/visionneuse.php?arko=YTo2OntzOjQ6ImRhdGUiO3M6MTA6IjIwMTgtMDUtMjMiO3M6MTA6InR5cGVfZm9uZHMiO3M6MTE6ImFya29fc2VyaWVsIjtzOjQ6InJlZjEiO2k6NTtzOjQ6InJlZjIiO2k6MjQ3Njg7czoxNjoidmlzaW9ubmV1c2VfaHRtbCI7YjoxO3M6MjE6InZpc2lvbm5ldXNlX2h0bWxfbW9kZSI7czo0OiJwcm9kIjt9#uielem_move=0%2C0&uielem_islocked=0&uielem_zoom=35&uielem_brightness=0&uielem_contrast=0&uielem_isinverted=0&uielem_rotate=F -->
+            </source>
+            <source>
+                <sourceEntry>« Changement de domicile », Journal de Paris, 5 mars 1785, p. 265</sourceEntry>
+                <!-- http://gallica.bnf.fr/ark:/12148/bpt6k1052721r/f3.item -->
+            </source>
+            <source>
+                <sourceEntry>Almanach royal 1777</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Alain Le Bihan, Françs-maçons parisiens du Grand Orient de France (fin du XVIIIe siècle), Paris, Bibl. Nat., 1966.</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Alain Le Bihan, Francs-maçons et ateliers parisiens de la Grande Loge de France au XVIIIe siècle, Paris, 1973, p. 325</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Archives de Paris, D4B6 94 6509</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>« Nouveaux souscripteurs proposés à l’assemblée du 13 fév 1778 »AN T160/18 et « Société d’Emulation. Situation de la Caisse de Mars 1778 » AN T160/22</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Ango, Jean-Pierre, Mémoire et observations relatives à une machine hydraulique en remplacement de celles subsistantes au pont Notre-Dame et au Pont-Neuf... par Jean-Pierre Ango,... (Paris,) impr. de J.-B. Hérault, s. d. [1791]. In-4°, 12 p.</sourceEntry>
+                <!-- Bnf 4- Z LE SENNE- 2430 (8) -->
+            </source>
+            <source>
+                <sourceEntry>Ango, Jean-Pierre, Observations sur les avantages et les inconvénients de la pompe à feu de Chaillot et sur des améliorations nécessaires à la rivière de Seine, en ce qui concerne la capitale,... par Jean-Pierre Ango,... Paris, impr. de J.-B. Hérault, 1791. In-4°, 11 p.</sourceEntry>
+                <!-- Bnf 4- Z LE SENNE- 2430 (7) -->
+            </source>
+            <source>
+                <sourceEntry>Archives de Paris, DC6 27 f° 39 r° et v°</sourceEntry>
+                <!-- Expert, entrepreneur des bât demeurant à Paris 25 oct 1783 Surséance Générale pour un an -->
+            </source>
+            <source>
+                <sourceEntry>V/1/459</sourceEntry>
+                <!-- [Provision d’office]. 16 septembre 1772.  On apprend qu’Angot est né le 13 novembre 1739, dans la paroisse de l’église de Saint-Victor à paris -->
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XCI/1103, 11 juillet 1772</sourceEntry>
+                <descriptiveNote>
+                    <p>ANGO (Jean Pierre) architecte entrepreneur rue Saint-Victor § Quittance de .. à Desmaisons architecte, pour le fait m. lieutenant sur la vente d'une maison héritée de sa belle-mère. 11 juillet 1772</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XCI/1103, 11 juillet 1772</sourceEntry>
+                <descriptiveNote>
+                    <p>Ango (Jean-Pierre) architecte entrepreneur § liquidation de la succession de sa belle mère femme de Lucien Louis Vallée entrepreneur Juillet 1772 (notaire : Louis Jacques Baron)</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XCI/1103, 13 juillet 1772</sourceEntry>
+                <descriptiveNote>
+                    <p>ANGO (Jean-Pierre) architecte entrepreneur de bâtiments ; rue Saint-Victor, paroisse Saint-N.-du-C. § Liquidation de la succession de Catherine Angélique OLIVIER, épouse de Louis-François VALLÉE, maître menuisier, rue du Fbg-St-Antoine, paroisse Ste-Marguerite, entre Marie Angélique VALLÉE, épouse de -, Lucien Louis VALLÉE, entrepreneur de bâtiments, rue des Sts-Pères, paroisse Saint-Sulpice, Nicolas Louis VALLÉE, mineur, et led. Louis-François VALLÉE, leur père. ; Quittance le 11 juillet 1772. 10 juillet 1772</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/LXXXIV/789</sourceEntry>
+                <descriptiveNote>
+                    <p>Inventaire après décès de Jean Pierre Ango, demeurant quai de l'Ecole, n° 16, 11 mars 1815 (notaire : Vincent Fournier-Verneuil)</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>angotJP1739</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Angot</part>
+                <part localType="forename">Jean Pierre</part>
+                <part localType="date">1739-1815</part>
+                <!-- ou alors :
+                    <part>Angot, Jean Pierre (1739-1815)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+            <nameEntry>
+                <part localType="surname">Ango</part>
+                <part localType="forename">Jean Pierre</part>
+                <part localType="date">1739-1815</part>
+                <alternativeForm>AFNOR_Z44-061</alternativeForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <!-- exemple de gestion pour la contradiction de sources. -->
+                <dateSet>
+                    <date localType="birth" standardDate="1739-11-13"/>
+                    <!-- V/1/459 -->
+                    <date localType="death" standardDate="1824-04-03"/>
+                    <date localType="death" notAfter="1815-03-11"/>
+                    <!-- MC/ET/LXXXIV/789 -->
+                </dateSet>
+                <descriptiveNote>
+                    <p>L’état-civil reconstitué de Paris (en ligne), signale le décès d'un Jean Pierre Angot le 3 avril 1824. Toutefois, nous avons retrouvé au Minutier central, dans les minutes du notaire Vincent Fournier-Verneuil (cote MC/ET/LXXXIV/789), un « Inventaire après décès de Jean Pierre Ango, demeurant quai de l'Ecole, n° 16 », en date du « 11 mars 1815 ».</p>
+                </descriptiveNote>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Naissance</placeRole>
+                    <placeEntry>Paris, paroisse de l’église de Saint-Victor</placeEntry>
+                    <!-- V/1/459 -->
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, vis-à-vis l'abbaye Saint-Victor</placeEntry>
+                    <date notAfter="1785-03-05"/>
+                    <!-- « Changement de domicile » Journal de Paris, 5 mars 1785, p. 265. -->
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, quai de l'École, près le Pont-Neuf</placeEntry>
+                    <date standardDate="1785-03-05"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, paroisse Saint-Nicolas-du-Chardonnet, Rue Saint-Victor</placeEntry>
+                    <date standardDate="1772-07-13"/>
+                    <!-- MC/ET/XCI/1103  -->
+                </place>
+                <place>
+                    <placeRole>adresse</placeRole>
+                    <placeEntry>Paris, quai &amp; au coin de la place de l'École (1772)</placeEntry>
+                    <date standardDate="1777"/>
+                    <!-- Almanach royal 1777 -->
+                    <!-- http://gallica.bnf.fr/ark:/12148/bpt6k2042351/f466.image -->
+                </place>
+                <place>
+                    <placeRole>adresse</placeRole>
+                    <placeEntry>Paris, quai de l'École, n° 16</placeEntry>
+                    <date notAfter="1815-03-11"/>
+                    <!-- MC/ET/LXXXIV/789 -->
+                </place>
+            </places>
+            <functions localType="expert">
+                <function localType="verified">
+                    <term>Expert entrepreneur</term>    
+                </function>
+                <function localType="sources">
+                    <term>Architecte entrepreneur de bâtiments</term>
+                    <date localType="lettresProvisions" standardDate="1772-09-16">Achat de l’office à Mathieu De Bias Aubry</date>
+                </function>
+            </functions>
+            <biogHist>
+                <chronList>
+                    <chronItem>
+                        <date standardDate="1772-07-10"/>
+                        <event>ANGO (Jean-Pierre) architecte entrepreneur de bâtiments ; rue Saint-Victor, paroisse Saint-N.-du-C. Liquidation de la succession de Catherine Angélique OLIVIER, épouse de Louis-François VALLÉE, maître menuisier, rue du Fbg-St-Antoine, paroisse Ste-Marguerite, entre Marie Angélique VALLÉE, épouse de -, Lucien Louis VALLÉE, entrepreneur de bâtiments, rue des Sts-Pères, paroisse Saint-Sulpice, Nicolas Louis</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1773-07-11"/>
+                        <event>ANGO (Jean Pierre) architecte entrepreneur rue Saint-Victor § Quittance de .. à Desmaisons architecte, pour le fait m. lieutenant sur la vente d'une maison héritée de sa belle-mère. 11 juillet 1772.</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1772-07-13"/>
+                        <event>Jean Pierre Angot “entrepreneur de bâtimens à Paris demeurant rue St Victor paroisse St Nicolas du Chardonnet achète à Mathieu De Bias Aubry “architecte juré expert Bourgeois demeurant à Paris rue St Martin paroisse Saint Merry “ […] “l’état et office de juré expert en la ville et faubourg de Paris” pour la somme de 5 000 livres</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1778-03"/>
+                        <event>Ango est membre de la Société libre d’émulation de l’abbé Baudeau, il prend une souscription en Mars 1778 (1 seule sousc semble t-il)</event>
+                    </chronItem>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1779"/>
+                            <toDate standardDate="1789"/>
+                        </dateRange>
+                        <event>Ancien orateur de la loge du vén. maître Puisieux (Sainte-Marguerite). Vénérable maître de la Loge Saint-Jean de la Parfaite Egalité (1779-1789).</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1783-10-25"/>
+                        <event>Expert, entrepreneur des bât demeurant à Paris 25 oct 1783 Surséance Générale pour un an</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1785-08-31"/>
+                        <event>Faillite 31 août 1785</event>
+                    </chronItem>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1786"/>
+                            <toDate standardDate="1788"/>
+                        </dateRange>
+                        <event>Les Élus de la Parfaite Intimité, 1786-88</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <!-- Épouse -->
+                <relationEntry>Vallée, Marie Angélique</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- Belle-mère -->
+                <relationEntry>Olivier, Catherine Angélique</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- Beau-père -->
+                <relationEntry>Vallée, Louis-François</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- Beau-frère -->
+                <relationEntry>Vallée, Lucien Louis</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- Beau-frère -->
+                <relationEntry>Vallée, Nicolas Louis</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/Relationship" xlink:type="simple">
+                <relationEntry>Maître Puisieux</relationEntry>
+                <descriptiveNote>
+                    <p>Angot est ancien orateur de la loge du vénérable maître Puisieux.</p>
+                    <!--Le Bihan, Françs-maçons parisiens du Grand Orient de France (fin du XVIIIe siècle), Paris, Bibl. Nat., 1966.-->
+                </descriptiveNote>
+            </cpfRelation>
+
+            <!-- Pour ses écrits -->
+            <!-- possibilité de passer par la TEI pour les éléments bibliographiques -->
+            <resourceRelation resourceRelationType="creatorOf">
+                <!-- Bnf 4- Z LE SENNE- 2430 (8) -->
+                <relationEntry>Ango, Jean-Pierre, Mémoire et observations relatives à une machine hydraulique en remplacement de celles subsistantes au pont Notre-Dame et au Pont-Neuf... par Jean-Pierre Ango,... (Paris,) impr. de J.-B. Hérault, s. d. [1791]. In-4°, 12 p.</relationEntry>
+            </resourceRelation>
+            <resourceRelation resourceRelationType="creatorOf">
+                <relationEntry>Ango, Jean-Pierre, Observations sur les avantages et les inconvénients de la pompe à feu de Chaillot et sur des améliorations nécessaires à la rivière de Seine, en ce qui concerne la capitale,... par Jean-Pierre Ango,... Paris, impr. de J.-B. Hérault, 1791. In-4°, 11 p.</relationEntry>
+                <!-- Bnf 4- Z LE SENNE- 2430 (7) -->
+            </resourceRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

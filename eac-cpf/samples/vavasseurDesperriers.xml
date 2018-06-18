@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>EXPERTS_SAMPLE_FICTIF04</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>    
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-05-24"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2018-06-08"></eventDateTime>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>Lettres de provisions de Vavasseur Desperriers, Louis Athanase (1773-01-13)</sourceEntry>
+            </source>
+
+            <!-- SIV -->
+            <source>
+                <sourceEntry>MC/ET/XXVII/402, 5 avril 1779</sourceEntry>
+                <descriptiveNote>
+                    <p>VAVASSEUR-DESPERRIERS (Louis Athanase) architecte expert juré du roi quai des Ormes paroisse Saint-Paul § Contrat de mariage entre Louis Athanase VAVASSEUR-DESPERRIERS, architecte expert juré du roi, et Geneviève PEUVRET. Parmi les témoins : Guillaume EGRESSET, juré du roi expert des bâtiments, architecte de la police. Artistes, artisans XVIII/e/ Architectes</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXVII/415, 4 janvier 1781</sourceEntry>
+                <descriptiveNote>
+                    <p>VAVASSEUR-DESPERRIERS (Louis Athanase) architecte expert juré du roi rue et paroisse Saint-Paul § Inventaire après décès de Marie Angélique GÉRIN, épouse de Jean Eustache PEUVRET, huissier ordinaire du roi au parlement, demeurant rue du Four, à la requête (entre autres) de -, époux de Geneviève PEUVRET, fille de la défunte. Artistes, artisans XVIII/e/ Architectes</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/RE/XXVII/9, 3 thermidor an IX (22 juillet 1801)</sourceEntry>
+                <descriptiveNote>
+                    <p>Inventaire de Louis-Athanase Vavasseur Desperriers, rue Saint-Paul.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/RE/VI/18, 13 janvier 1786</sourceEntry>
+                <descriptiveNote>
+                    <p>Notoriété portant renonciation par Louis Athanaze Vavasseur Desperriers, et par Claude Prosper Vavasseur Desperriers, à la succession de Louise Charlotte Félicité Meunier, veuve de Claude Vavasseur Desperriers.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/RE/VI/18, 28 mars 1786</sourceEntry>
+                <descriptiveNote>
+                    <p>Inventaire après décès de Lucie Charlotte Félicité Meusnier, veuve de Claude Vavasseur Desperriers [mère de L Ath. VD]</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>vavasseurDesperriersLA1742</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Vavasseur Desperriers</part>
+                <part localType="forename">Louis Anathase</part>
+                <part localType="date">1742-</part>
+                <!-- ou alors :
+                    <part>Vavasseur Desperriers, Louis Anathase (1742-)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <date localType="birth" standardDate="1742"/>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Naissance</placeRole>
+                    <placeEntry>Paris, paroisse Saint-Nicolas-des-Champs</placeEntry>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, quai des Ormes</placeEntry>
+                    <date standardDate="1779"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue Saint-Paul</placeEntry>
+                    <date standardDate="1781"/>
+                </place>
+            </places>
+            <functions localType="expert">
+                <function localType="verified">
+                    <term>Expert entrepreneur</term>
+                </function>
+                <function localType="sources">
+                    <term>architecte expert juré du roi</term>
+                    <!-- MC/ET/XXVII/402, 5 avril 1779 -->
+                    <date localType="lettresProvisions" standardDate="1773-01-13"/>
+                </function>
+            </functions>
+            <biogHist><chronList>
+                    <chronItem>
+                        <date standardDate="1779"/>
+                        <event>Mariage avec Geneviève Peuvret</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <!-- épouse -->
+                <relationEntry>Peuvret, Geneviève</relationEntry>
+            </cpfRelation>
+            
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
+                <!-- Juré du roi, expert des bâtiments, architecte de police, témoin lors de son mariage  -->
+                <relationEntry>Egresset, Guillaume</relationEntry>
+            </cpfRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>EXPERTS_SAMPLE_FICTIF05</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-05-24"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2018-06-18"></eventDateTime>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>Lettres de provisions de Védy, Julien (25 mars 1728)</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN Y5080A, Substitution, 10 avril 1781</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Bibliothèque nationale de France, Département des manuscrits, NAF 12038</sourceEntry>
+                <descriptiveNote>
+                    <p>Laborde, Léon, Répertoire alphabétique de noms d'artistes et artisans, des XVIe, XVIIe et XVIIIe siècles, relevés dans les anciens registres de l'État civil parisien par le marquis Léon de Laborde, dit « Fichier Laborde ».</p>
+                </descriptiveNote>
+            </source>
+            <!-- SIV -->
+            <source>
+                <sourceEntry>MV/ET/VI/645, 1719-06-04</sourceEntry>
+                <descriptiveNote>
+                    <p>vente de matériel de serrurerie après le décès de JB, rue de la Pelleterie (⇒ voir lien de parenté)</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XIII/205, 1720-01-06</sourceEntry>
+                <descriptiveNote>
+                    <p>mariage du fils de feu JV, maître serrurier rue de la Pelleterie (⇒ homonymie, voir lien de parenté)</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/VI/651, 1721-10-19</sourceEntry>
+                <descriptiveNote>
+                    <p>JV, « maître serrurier et serrurier des Menus Plaisirs du roi », rue Fromenteau, vente de matériel de serrurerie (⇒ homonymie possible, voir lien de parenté)</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/VII/239, 1724-11-01</sourceEntry>
+                <descriptiveNote>
+                    <p>apprentissage, JV, maître serr. rue Fromenteau</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XII/420, 1732-07-26</sourceEntry>
+                <descriptiveNote>
+                    <p>JV, « serrurier ordinaire du roi à Paris », demT rue Fromenteau, quittance et contstitution</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/CXVIII/346, 1737-02-04</sourceEntry>
+                <descriptiveNote>
+                    <p>testament de la femme de JV, maître serr. rue Froidmanteau et don mutuel entre époux</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/RE/XIX/5, 11 déc. 1780</sourceEntry>
+                <descriptiveNote>
+                    <p>testament déposé de Julien Vedy</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/RE/XIX/6, 4 août 1784</sourceEntry>
+                <descriptiveNote>
+                    <p>notoriété concernant la succession de Julien Vedy</p>
+                </descriptiveNote>
+            </source>
+            <!-- ajout Almanachs pour le test -->
+            <source>
+                <sourceEntry>Almanach royal 1780</sourceEntry>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            
+            <entityId>vedyJ1697</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Vedy</part>
+                <part localType="forename">Julien</part>
+                <!-- Q° comment fournir une datation lorsque qu'il y a une incertitude dans les sources -->
+                <!-- Décès, IAD décembre 1780 ?-->
+                <part localType="date">1697-1780</part>
+                <!-- ou alors :
+                    <part>Vedy, Julien (1697-1780)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <dateRange>
+                    <fromDate standardDate="1697-01"/>
+                    <toDate notAfter="1780-12-19"/>
+                    <!-- date de l'inventaire après décès -->
+                </dateRange>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Naissance</placeRole>
+                    <placeEntry>Paris, Saint-Barthélémy<!-- paroisse ? --></placeEntry>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue Fromenteau</placeEntry>
+                </place>
+                <!-- almanachs pour le test -->
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue des Tournelles, près la fontaine</placeEntry>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, près la barrière de Rambouillet</placeEntry>
+                </place>
+            </places>
+            <functions localType="expert">
+                <function localType="sources">
+                    <!-- Q° Il est doyen des Jurés experts à sa mort, est-ce intéressant de la faire figurer ? -->
+                    <term>expert entrepreneur</term>
+                    <date localType="lettresProvisions" standardDate="1728-03-25"/>
+                    <descriptiveNote>
+                        <p>Office vacant (dernier titulaire : Jean Luc Frosne, †)</p>
+                    </descriptiveNote>
+                </function>
+            </functions>
+            <function localType="other">
+                <term>maître serrurier</term>
+                <date localType="apprentissage" standardDate="1724-11-01"/>
+            </function>
+            <biogHist>
+                <chronList>
+                    <!--
+                        -	MV/ET/VI/645, 1719-06-04, vente de matériel de serrurerie après le décès de JB, rue de la Pelleterie (⇒ voir lien de parenté)
+                        -	MC/ET/XIII/205, 1720-01-06, mariage du fils de feu JV, maître serrurier rue de la Pelleterie (⇒ homonymie, voir lien de parenté)
+                        -	MC/ET/VI/651, 1721-10-19, JV, « maître serrurier et serrurier des Menus Plaisirs du roi », rue Fromenteau, vente de matériel de serrurerie (⇒ homonymie possible, voir lien de parenté)
+                    -->
+                    <chronItem>
+                        <date standardDate="1780"/>
+                        <event>Doyen des jurés experts</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1780-12-11"/>
+                        <event>Testament olographe du 4 avril 1780 déposé chez Me de Saint Paul le 11 décembre 1780</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <!-- régler la question des homonymes. -->
+        </relations>
+    </cpfDescription>
+</eac-cpf>

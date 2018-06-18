@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div xml:lang="fra">
+            <head>Projet Experts : XML-EAC-CPF</head>
+            <p>Par convention, les éléments seront indiqués entre chevrons (<gi>element</gi>) et les attributs prendront la forme suivante : <att>attribut</att>.</p>
+            <div>
+               <head>Rappels généraux sur XML</head>
+               <p rend="alignCenter">XML : e<emph>X</emph>tensible <emph>M</emph>arkup <emph>L</emph>anguage <lb/><graphic url="https://s.w.org/images/core/emoji/2.4/svg/2195.svg"/>
+                  <lb/>Langage de balisage / extensible</p>
+               <p>Un langage de balisage est fondé sur l'emploi de balises simples, et compréhensibles par l'homme, pour décrire du texte.</p>
+               <p>Si nous devions encoder la phrase : <q>On emploi <foreign xml:lang="lat"><emph>a priori</emph></foreign> les italiques pour les locutions et termes empruntés à d'autres langues</q>, la question posée serait de savoir comment décrire la locution latine <emph><foreign xml:lang="lat">a priori</foreign></emph>.</p>
+               <p>Avec XML il ne s'agit pas de dire qu'elle est représentée en italique, mais d'expliquer pourquoi elle est en italique. XML permet de <emph>dissocier la forme et le contenu</emph>. La mise en forme est externalisée.</p>
+               <p>Exemple d'encodage en XML :</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">On emploi <locutionEtrangere>a priori</locutionEtrangere> les italiques pour les locutions et termes empruntés à d'autres langues</egXML>
+               <p>XML est également dit <emph>extensible</emph>, c'est à dire qu'il ne propose pas de « jeu de balises » prédéfini que nous pourrions utiliser en toutes circonstances.</p>
+               <p>En réalité, XML formule un ensemble de règles sur ce que doit être un document <emph>bien formé</emph>, c'est à dire qui respecte des règles syntaxiques strictes, et <emph>valide</emph>, c'est à dire conforme à un <emph>schéma</emph> ou à une <emph>DTD</emph> (<abbr>p. ex.</abbr> le schéma TEI, la DTD EAD, le schéma EAC-CPF, etc.).</p>
+               <p>Un schéma peut être considéré en quelque sorte comme un dictionnaire de balise.</p>
+               <p>Si nous reprenons le même exemple mais que nous décidons de l'encoder selon la TEI, nous obtiendrons :</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">On emploi <foreign xml:lang="lat">a priori</foreign> les italiques pour les locutions et termes empruntés à d'autres langues</egXML>
+               <p>XML est supporté par le <foreign xml:lang="eng">World Wide Web Consortium</foreign> (W3C), et son utilisation a été recommandée en France par la Direction générale de modernisation de l'État dans son <title>Référentiel général d'interopérabilité</title> publié en 2009.</p>
+               <p>Ce langage est perçu comme un excellent moyen de sécuriser et de diffuser ses données.</p>
+               <list>
+                  <item>C'est <emph>un format ouvert</emph>, particulièrement bien documenté et finalement assez simple : il ne s'agit que de texte et rien d'autre. On écarte donc d'emblée les difficultés liées à l'utilisation de formats propriétaires.</item>
+                  <item>C'est une format qui fait preuve d'une grande <emph>souplesse</emph> d'utilisation. Il est notamment possible de travailler sous plusieurs espaces de noms au sein d'un même document, afin de répondre à des problématiques bien précises.</item>
+                  <item>Enfin, c'est un excellent <emph>format pivot</emph>, c'est à dire qu'il est possible de exporter ses données XML vers d'autres formats facilement.</item>
+               </list>
+            </div>
+            <div>
+               <head>EAC-CPF : <emph>E</emph>ncoded <emph>A</emph>rchival <emph>C</emph>ontext - <emph>C</emph>orporate bodies, <emph>P</emph>ersons, <emph>F</emph>amilies</head>
+               <p rend="alignCenter">Encoded Archival Context - Corporate bodies, Persons, Families <lb/><graphic url="https://s.w.org/images/core/emoji/2.4/svg/2195.svg"/>
+                  <lb/>Contexte archivistique encodé - collectivités, personnes et familles</p>
+               <p>L'EAC-CPF est un standard pour l'encodage et l'échange de <emph>notices d'autorité</emph>, dans le contexte des documents d'archives. Ce format est fondé sur la norme internationale <emph>ISAAR (CPF)</emph>.</p>
+               <p>EAC-CPF a été pensé pour être utilisé en complément de l'<emph>EAD</emph>, le standard pour la description archivistique, afin de rendre compte du contexte dans lequel <q>les agents ont opéré et ont créé et/ou utilisé les documents d'archives</q>. Son objectif est donc avant tout de pouvoir traiter les agents (personnes, familles, institutions) qui produisent, utilisent ou conservent des archives.</p>
+               <p>EAC-CPF permet également de décrire les relations entre les différents agents. Il est ensuite possible de lier ces informations aux descriptions des documents d'archives.</p>
+               <p>Notons enfin que EAC-CPF permet de préciser certaines informations en les liant à des <emph>vocabulaires contrôlés</emph>.</p>
+               <div>
+                  <head>Structure d'un document EAC-CPF</head>
+                  <p>Un document encodé en EAC-CPF contient deux éléments obligatoires : l'élément <gi>control</gi> et l'élément <gi>cpfDescription</gi>.</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+      <!-- eac-cpf : élément racine -->
+      <control>
+         <!-- control : élément de contrôle concernant le contexte de la description-->
+      </control>
+      <cpfDescription>
+         <!-- cpfDescription : description de la personne, famille, collectivité. Contient des éléments de description de l'entité-->
+      </cpfDescription>
+   </eac-cpf>
+</egXML>
+                  <div>
+                     <head><gi>control</gi></head>
+                     <p>L'élément <gi>control</gi> rassemble un certain nombre de métadonnées sur l'instance encodée. Nous pourrons notamment y retrouver les balises suivantes :</p>
+                     <list>
+                        <item><gi>recordID</gi> : identifiant de la notice</item>
+                        <item><gi>maintenanceAgency</gi> : informations sur l'institution responsable de la création et de la gestion de la notice</item>
+                        <item><gi>maintenanceStatus</gi> : informations sur l'état et le statut de la notice</item>
+                        <item><gi>maintenanceHistory</gi> : historique des révisions de la notice</item>
+                        <item><gi>publicationStatus</gi> : informations sur le statut éditorial de la notice</item>
+                        <item><gi>languageDeclaration</gi> : informations sur la langue utilisée (concerne les caractères codés, mais aussi la langue de rédaction de la notice)</item>
+                        <item><gi>sources</gi> : une description des sources consultées pour la rédaction de la notice. Il est possible d'attribuer un <att>xml:id</att> (identifiant unique) à chaque source décrite.</item>
+                        <item><gi>conventionDeclaration</gi> : informations sur les normes et vocabulaires contrôlés utilisés pour la rédaction de la notice</item>
+                     </list>
+                     <p>Exemple d'un élément <gi>control</gi> complété :</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <control>
+      <!-- recordID obligatoire -->
+      <recordId>EXPERTS_VAVASSEUR-DESPERRIERS_FICTIF01</recordId>
+      <!-- maintenanceStatus obligatoire 
+        Valeurs possibles : new, revised, deleted, cancelled, deletedSplit, deletedReplaced -->
+      <maintenanceStatus>new</maintenanceStatus>
+      <!-- publicationStatus optionnel
+        valeurs possibles : approved, inProcess -->
+      <publicationStatus>inProcess</publicationStatus>
+      <!-- maintenanceAgency obligatoire 
+        nom de l'institution responsable de la création/maintenance de l'instance EAC -->
+      <maintenanceAgency>
+         <agencyCode>FR-CNRS</agencyCode><!-- agencyCode optionnel-->
+         <!-- agencyName obligatoire-->
+         <agencyName>Centre national de la recherche scientifique</agencyName>
+      </maintenanceAgency>
+      <!-- languageDeclaration optionnel-->
+      <languageDeclaration>
+         <!-- languageCode forme : [a-z]{3} -->
+         <!-- langue utilisée pour la rédaction -->
+         <language languageCode="fra"/>
+         <!-- languageCode forme [A-Z][a-z]{3} -->
+         <!-- en caractère latin -->
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <!-- conventionDeclaration optionnel et répétable-->
+      <conventionDeclaration>
+         <!-- références aux normes utilisées pour former la notice -->
+         <abbreviation>ISAAR(CPF)</abbreviation>
+         <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d'autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+      </conventionDeclaration>
+      <conventionDeclaration>
+         <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+         <citation>Norme NF Z 44-060, octobre 1983, Catalogue d'auteurs et d'anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d'échange -- Échange d'information -- Représentation de la date et de l'heure.</citation>
+      </conventionDeclaration>
+      <conventionDeclaration>
+         <abbreviation>AFNOR_Z44-061</abbreviation>
+         <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <conventionDeclaration>
+         <abbreviation>ISO8601</abbreviation>
+         <citation>Norme ISO 8601:2004 Éléments de données et formats d'échange — Échange d'information – Représentation de la date et de l'heure.</citation>
+      </conventionDeclaration>
+      <!-- localControl optionnel et répétable
+      correspond au niveau de détail de la notice -->
+      <localControl localType="detailLevel">
+         <term>in progress</term>
+      </localControl>
+      <!-- maintenanceHistory obligatoire -->
+      <maintenanceHistory>
+         <!-- maintenanceEvent répétable -->
+         <maintenanceEvent>
+            <!-- eventType 
+                valeurs possibles : 
+                - cancelled
+                - created
+                - deleted
+                - derived
+                - revised
+                - updated-->
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2018-05-24"/>
+            <!-- agentType valeurs possibles : human ou machine-->
+            <agentType>human</agentType>
+            <agent>Josselin Morvan</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <!--sourc description des sources utilisées pour compléter cette notice -->
+      <sources>
+         <!-- source : répétable -->
+         <!-- possibilité de mettre les références bibliographiques sous l'espace de nom tei avec objectXMLWrap -->
+         <source>
+            <sourceEntry>Lettres de provisions de Vavasseur Desperriers, Louis Athanase (1773-01-13)</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>MC/ET/XXVII/402, 5 avril 1779</sourceEntry>
+            <descriptiveNote>
+               <p>VAVASSEUR-DESPERRIERS (Louis Athanase) architecte expert juré du roi quai des Ormes paroisse Saint-Paul § Contrat de mariage entre Louis Athanase VAVASSEUR-DESPERRIERS, architecte expert juré du roi, et Geneviève PEUVRET. Parmi les témoins : Guillaume EGRESSET, juré du roi expert des bâtiments, architecte de la police. Artistes, artisans XVIII/e/ Architectes</p>
+            </descriptiveNote>
+         </source>
+         <source>
+            <sourceEntry>MC/ET/XXVII/415, 4 janvier 1781</sourceEntry>
+            <descriptiveNote>
+               <p>VAVASSEUR-DESPERRIERS (Louis Athanase) architecte expert juré du roi rue et paroisse Saint-Paul § Inventaire après décès de Marie Angélique GÉRIN, épouse de Jean Eustache PEUVRET, huissier ordinaire du roi au parlement, demeurant rue du Four, à la requête (entre autres) de -, époux de Geneviève PEUVRET, fille de la défunte. Artistes, artisans XVIII/e/ Architectes</p>
+            </descriptiveNote>
+         </source>
+         <source>
+            <sourceEntry>MC/RE/XXVII/9, 3 thermidor an IX (22 juillet 1801)</sourceEntry>
+            <descriptiveNote>
+               <p>Inventaire de Louis-Athanase Vavasseur Desperriers, rue Saint-Paul.</p>
+            </descriptiveNote>
+         </source>
+         <source>
+            <sourceEntry>MC/RE/VI/18, 13 janvier 1786</sourceEntry>
+            <descriptiveNote>
+               <p>Notoriété portant renonciation par Louis Athanaze Vavasseur Desperriers, et par Claude Prosper Vavasseur Desperriers, à la succession de Louise Charlotte Félicité Meunier, veuve de Claude Vavasseur Desperriers.</p>
+            </descriptiveNote>
+         </source>
+         <source>
+            <sourceEntry>MC/RE/VI/18, 28 mars 1786</sourceEntry>
+            <descriptiveNote>
+               <p>Inventaire après décès de Lucie Charlotte Félicité Meusnier, veuve de Claude Vavasseur Desperriers [mère de L Ath. VD]</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+</egXML>
+                  </div>
+                  <div>
+                     <head>L'élément <gi>cpfDescription</gi></head>
+                     <p>L'élément <gi>cpfDescription</gi> et l'élément servant à la description de l'entité (personne, collectivité ou famille). Il peut contenir les sous-éléments suivants :</p>
+                     <list>
+                        <item><gi>identity</gi> : pour décrire l'identité de l'entité encodée</item>
+                        <item><gi>description</gi> : contient des éléments de description formels conformes à la norme ISAAR (CPF)</item>
+                        <item><gi>relations</gi> : description des relations existantes entre l'entité décrite et une ou plusieurs collectivités, personnes, familles (sous-élément <gi>cpfRelation</gi>), ou entre l'entité et une ou plusieurs fonctions (balise <gi>functionRelation</gi>)</item>
+                        <item><gi>alternativeSet</gi> : contient des notices d'autorités alternatives</item>
+                     </list>
+                  </div>
+                  <div>
+                     <head><gi>identity</gi></head>
+                     <p>L'élément <gi>identity</gi> est particulièrement complet et sert à la description de l'identité de l'entité encodée. Il peut contenir <emph>la (les) forme(s) autorisée(s) du nom</emph> (<gi>nameEntry</gi>), des <emph>variantes</emph>, mais également des <emph>formes parallèles</emph>, c'est-à-dire rédigées dans une langue ou une écriture différente (<gi>nameEntryParallel</gi>). Il doit contenir une balise permettant de préciser le type d'entité (personne, famille, collectivité), et il est également possible d'attribuer un identifiant. Chaque partie du nom pourra être encodée à l'aide d'une balise <gi>part</gi>. Chaque forme du nom peut être datée par l'emploi de l'élément <gi>useDates</gi> ; <emph>attention, il ne s'agit pas d'indiquer ici les dates de naissance ou de mort</emph> ! Enfin, il est possible de préciser si une forme du nom est une forme autorisée, alternative, ou préférée (<gi>authorizedForm</gi>, <gi>alternativeForm</gi>, <gi>preferredForm</gi>).</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <identity>
+      <!-- entityId optionnel, répétable -->
+      <entityId>adhenetT1690</entityId>
+      <!-- entityType obligatoire -->
+      <entityType>person</entityType>
+      <nameEntry>
+         <part localType="surname">Adhenet</part>
+         <part localType="forename">Thomas</part>
+         <part localType="date">1690-</part>
+         <!-- ou alors -->
+         <part>Adhenet, Thomas (1690-)</part>
+         <!-- On notera que nous n'utiliserons pas d'élément de date pour signaler la naissance ou la mort. -->
+         <!-- <UseDate /> est réservé pour la période d'utilisation d'un nom. -->
+         <!-- Il est également possible de signaler s'il s'agit d'un forme autorisée ou alternative. Nous prendrons soin de préciser la norme utilisées pour la rédaction. -->
+         <authorizedForm>AFNOR_Z44-061</authorizedForm>
+      </nameEntry>
+   </identity>
+</egXML>
+                  </div>
+                  <div>
+                     <head><gi>description</gi></head>
+                     <p>L'élément <gi>description</gi> est utilisé pour décrire l'entité. Il reprend les catégories descriptives d'ISAAR (CPF), notamment :</p>
+                     <list>
+                        <item><gi>existDates</gi> : dates d'existence</item>
+                        <item><gi>place</gi> : lieu</item>
+                        <item><gi>localControl</gi> : description locale, permet d'enrichir la liste des éléments de description définis par ISAAR (CPF). On peut l'utiliser par exemple pour spécifier la nationalité de l'entité</item>
+                        <item><gi>function</gi> : contient des informations sur les fonctions exercées par l'entité</item>
+                        <item><gi>occupation</gi> : contient des informations sur les activités de l'entité</item>
+                        <item><gi>structureOrGenealogy</gi> : contient des informations sur la généalogie d'une personne ou d'un famille</item>
+                        <item><gi>generalContext</gi> : contient des informations sur le contexte général, social et culturel de l'entité</item>
+                        <item><gi>biogHist</gi> : biographie / histoire</item>
+                     </list>
+                     <div>
+                        <head><gi>existDates</gi></head>
+                        <p>Cet élément permet d'indiquer les dates d'existence de l'entité décrite : naissance et mort pour une personne, ou dates de création et de disparition pour une collectivité. Les dates peuvent être renseignées de manière précise ou de manière approximative.</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <!-- Pothenot -->
+   <existDates>
+      <dateRange>
+         <!-- Nous connaissons l'année de naissance et la date de mort de Pothenot. -->
+         <fromDate standardDate="1696"/>
+         <toDate standardDate="1765-05-23"/>
+      </dateRange>
+   </existDates>
+   <!-- Védy -->
+   <existDates>
+      <dateRange>
+         <fromDate standardDate="1697-01"/>
+         <toDate notAfter="1780-12-19"/>
+         <!-- Terminus post quem concernant la date de décès de Védy (date de l'inventaire après décès) encodé avec l'attribut @notAfter. -->
+      </dateRange>
+   </existDates>
+</egXML>
+                        <p>La tâche peut être plus complexe lorsque les sources se contredisent et que deux dates, ou plus, sont avancées. </p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <!-- Angot -->
+   <existDates>
+      <!-- Le schéma EAC-CPF prescrit l'utilisation de la balise <dateset/>  en cas de datation plus complexe et/ou incertaine-->
+      <dateSet>
+         <!-- L'utilisation de <dateRange/> et des sous-éléments <fromDate/> et <toDate/> semble difficile car ces deux dernières balises ne peuvent être répétées. -->
+         <!-- Il est toutefois possible d'attribuer un @localType pour préciser l'information. -->
+         <date localType="birth" standardDate="1739-11-13"/>
+         <date localType="death" notAfter="1815-03-11"/>
+         <date localType="death" standardDate="1824-04-03"/>
+      </dateSet>
+      <!-- Il est possible d'ajouter des notes. -->
+      <descriptiveNote>
+         <p>L'état-civil reconstitué de Paris (en ligne), signale le décès d'un Jean Pierre Angot le 3 avril 1824. Toutefois, nous avons retrouvé au Minutier central, dans les minutes du notaire Vincent Fournier-Verneuil (cote MC/ET/LXXXIV/789), un « Inventaire après décès de Jean Pierre Ango, demeurant quai de l'Ecole, n° 16 », en date du « 11 mars 1815 ».</p>
+      </descriptiveNote>
+   </existDates>
+   <!-- autre solution possible -->
+   <existDates>
+      <dateSet>
+         <dateRange>
+            <!-- On indique dans un <dateRange/> les dates les plus probables -->
+            <fromTo standardDate="1739-11-13"/>
+            <toDate notAfter="1815-03-11"/>
+         </dateRange>
+         <!-- on indique les autres dates possibles avec un élément <date/> et un @localType pour préciser l'information. -->
+         <date localType="death" standardDate="1824-04-03"/>
+      </dateSet>
+   </existDates>
+</egXML>
+                     </div>
+                     <div>
+                        <head><gi>place</gi> et <gi>places</gi></head>
+                        <p>La description des lieux ne pose pas de problèmes particuliers. Il est possible de décrire un lieu (<gi>place</gi>) ou plusieurs lieux (<gi>places</gi>). La nature des lieux peut être précisée et rédigée selon le langage naturel ou selon un vocabulaire contrôlé. Une datation plus ou moins complexe peut être renseignée.</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <!-- Vavasseur Desperriers -->
+   <places>
+      <places>
+         <place>
+            <placeRole>naissance</placeRole>
+            <placeEntry>Paris, paroisse Saint-Nicolas-des-Champs</placeEntry>
+            <date standardDate="1742"/>
+         </place>
+         <place>
+            <placeRole>adresse</placeRole>
+            <placeEntry>Paris, Quai des Ormes</placeEntry>
+            <date standardDate="1779"/>
+         </place>
+         <place>
+            <placeRole>adresse</placeRole>
+            <placeEntry>Paris, rue Saint-Paul</placeEntry>
+            <date standardDate="1781"/>
+         </place>
+      </places>
+   </places>
+</egXML>
+                     </div>
+                     <div>
+                        <head><gi>function</gi> et <gi>functions</gi></head>
+                        <p>À l'instar des lieux, il est possible de préciser une ou plusieurs fonctions rattachées à l'entité décrite. En cas de contradiction entre les sources, l'attribut <att>localType</att> pourrait permettre que préciser les informations. Dans l'hypothèse où un des experts passerait d'un colonne à l'autre, cette solution devra être évaluée.</p>
+                        <p>Le schéma EAC-CPF ne semble toutefois pas proposer de solutions satisfaisantes concernant les « événements » qui peuvent être rattachés à une fonction (lettre de provision, acquisition/cession, etc.). Une solution serait de donner un <att>localType</att> à un élément <gi>date</gi>, mais cela implique de définir une liste des types possibles ; qu'en sera-t-il si nous souhaitons faire apparaître d'autres informations ?</p>
+                        <p>Une autre solution serait de doubler l'élément <gi>functions</gi> (au pluriel) et de le typer. Cette dernière distinction pourrait également être utilisée si nous souhaitons distinguer des « types » de fonctions.</p>
+                        <p>Il est possible de lier une fonction à un vocabulaire contrôlé pour la préciser.</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <!-- Vavasseur Desperriers -->
+   <functions>
+      <function>
+         <!-- MC/ET/XXVII/402, 5 avril 1779 -->
+         <term>Architecte expert juré du roi</term>
+         <date localType="provisionsLetters" standardDate="1773-01-13"/>
+      </function>
+      <function localType="verified">
+         <!-- Almanach royal, deuxième colonne -->
+         <term>Expert entrepreneur</term>
+      </function>
+   </functions>
+   <!-- Autre solution -->
+   <functions localType="verified">
+      <function>
+         <!-- Almanach royal, deuxième colonne -->
+         <term>Expert entrepreneur</term>
+      </function>
+   </functions>
+   <functions>
+      <function>
+         <!-- MC/ET/XXVII/402, 5 avril 1779 -->
+         <term>Architecte expert juré du roi</term>
+         <date localType="provisionsLetters" standardDate="1773-01-13"/>
+      </function>
+   </functions>
+</egXML>
+                     </div>
+                     <div>
+                        <head><gi>biogHist</gi></head>
+                        <p>Il s'agit d'une balise spécialisée dans la description des éléments biographiques. Elle ne semble pas soulever d'interrogation particulière. Elle peut prendre la forme d'une liste chronologique, d'une liste simple, ou de plusieurs paragraphes. La liste chronologique semble la plus appropriée ; elle permet d'indiquer l'évênement, sa date ou sa durée, et éventuellement son lieu.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <biogHist>
+                              <chronList>
+                                 <chronItem>
+                                    <date standardDate="1646-08-16"/>
+                                    <placeEntry>Paris, paroisse Saint-Nicolas-des-Champs</placeEntry>
+                                    <event>Baptême de Louis Convers</event>
+                                 </chronItem>
+                                 <chronItem>
+                                    <date standardDate="1675-01-15"/>
+                                    <event>Louis Convers épouse Jeanne Marguerite Nocret.</event>
+                                 </chronItem>
+                                 <chronItem>
+                                    <date standardDate="1718-07-12"/>
+                                    <event>vente par Jeanne Nocret, veuve de LC, demT rue de la Chanvrerie, de l'office à Jacquot de Villeneuve.</event>
+                                 </chronItem>
+                              </chronList>
+                           </biogHist>
+                        </egXML>
+                        <p>L'élément <gi>chronList</gi> peut être répété au sein de <gi>biogHist</gi> et précisé par un attribut <att>localType</att>. Nous pourrions utiliser cette méthode pour, par exemple, rattacher des événements à une fonctions (lettre de provision, acquisition/cession, etc.).</p>
+                        <p>Il n'est pas possible de lier un événement à un vocabulaire contrôlé.</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <biogHist>
+      <!-- éléments biographiques relevant de la vie privée -->
+      <chronList localType="personnal">
+         <chronItem>
+            <date standardDate="1646-08-16"/>
+            <placeEntry>Paris, paroisse Saint-Nicolas-des-Champs</placeEntry>
+            <event>Baptême de Louis Convers</event>
+         </chronItem>
+         <chronItem>
+            <date standardDate="1675-01-15"/>
+            <event>Mariage entre Louis Convers et Jeanne Marguerite Nocret.</event>
+         </chronItem>
+      </chronList>
+      <!-- éléments biographiques relevant de la fonction d'expert -->
+      <chronList localType="expert">
+         <chronItem>
+            <event>Lettres de provision</event>
+         </chronItem>
+         <chronItem>
+            <date standardDate="1718-07-12"/>
+            <event>Vente</event>
+         </chronItem>
+      </chronList>
+   </biogHist>
+</egXML>
+                     </div>
+                  </div>
+                  <div>
+                     <head><gi>relations</gi></head>
+                     <p><gi>relations</gi> permet la description des relations existantes entre : l'entité décrite et une ou plusieurs collectivités, personnes, familles (sous-élément <gi>cpfRelation</gi>) ; l'entité et une ou plusieurs fonctions (<gi>functionRelation</gi>) ; l'entité et une ou plusieurs ressources (<gi>ressourceRelation</gi>).</p>
+                     <p>La description des relations peut être assez fine puisqu'il est également possible d'indiquer des dates et des lieux, et il est possible de faire appel à un vocabulaire contrôlé pour préciser le type de relation. Enfin, des notes peuvent être ajoutées afin d'apporter des précisions si nécessaire.</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+   <!-- Angot -->
+   <relations xmlns:xlink="http://www.w3.org/1999/xlink">
+      <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+         <!-- Épouse -->
+         <relationEntry>Vallée, Marie Angélique</relationEntry>
+      </cpfRelation>
+      <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+         <!-- Beau-frère -->
+         <relationEntry>Vallée, Lucien Louis</relationEntry>
+      </cpfRelation>
+      <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+         <!-- Beau-frère -->
+         <relationEntry>Vallée, Nicolas Louis</relationEntry>
+      </cpfRelation>
+      <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/Relationship" xlink:type="simple">
+         <!-- ancien orateur de la loge de  -->
+         <relationEntry>Maître Puisieux</relationEntry>
+         <descriptiveNote>
+            <p>Angot est ancien orateur de la loge du vénérable maître Puisieux.</p>
+            <!--Le Bihan, Françs-maçons parisiens du Grand Orient de France (fin du XVIIIe siècle), Paris, Bibl. Nat., 1966.-->
+         </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/Relationship" xlink:type="simple">
+         <!-- achat de l'office de juré -->
+         <relationEntry>Bias Aubry, Mathieu de</relationEntry>
+      </cpfRelation>
+      <!-- Pour ses écrits -->
+      <!-- possibilité de passer par la TEI pour les éléments bibliographiques -->
+      <resourceRelation resourceRelationType="creatorOf">
+         <!-- Bnf 4- Z LE SENNE- 2430 (8) -->
+         <relationEntry>Ango, Jean-Pierre, Mémoire et observations relatives à une machine hydraulique en remplacement de celles subsistantes au pont Notre-Dame et au Pont-Neuf... par Jean-Pierre Ango,... (Paris,) impr. de J.-B. Hérault, s. d. [1791]. In-4°, 12 p.</relationEntry>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf">
+         <relationEntry>Ango, Jean-Pierre, Observations sur les avantages et les inconvénients de la pompe à feu de Chaillot et sur des améliorations nécessaires à la rivière de Seine, en ce qui concerne la capitale,... par Jean-Pierre Ango,... Paris, impr. de J.-B. Hérault, 1791. In-4°, 11 p.</relationEntry>
+         <!-- Bnf 4- Z LE SENNE- 2430 (7) -->
+      </resourceRelation>
+   </relations>
+</egXML>
+                  </div>
+               </div>
+               <div>
+                  <head>Points à discuter</head>
+                  <p>L'encodage des six premiers experts était intéressant car cela a permis de tester le modèle en conditions réelles et de soulever des questions.</p>
+                  <p>Concernant les sources consultées pour bâtir les notices, s'il est possible de les déclarer, il est en revanche assez difficile, voire impossible, de les relier aux différentes informations, ce qui pourrait être problématique lorsque les sources se contredisent. C'est un des principaux inconvénients du modèle EAC-CPF. Lorsque c'est possible, nous pourrions utiliser un élément <gi>descriptiveNote</gi>, toutefois il ne s'agirait que d'une description en texte libre et non d'un véritable lien crée pour indiquer une relation entre une information et sa source.</p>
+                  <p>Le modèle de données EAC-CPF oblige à en quelque sorte à fragmentée les données. Il est toutefois étonnamment facile de répéter certaines informations. Il conviendra de mener une véritable réflexion sur ce point, afin de déterminer les méthodes d'encodage les plus appropriées pour ne pas répéter les informations à différents endroits, ce qui permettra également le respect les normes archivistiques.</p>
+                  <p>Le caractère très contraint du schéma EAC-CPF se fait sentir par moment, et l'ajout de certaines balises pourrait être appréciable afin de décrire plus finement nos données : par exemple lorsque nous décrirons une fonction, nous pourrions avoir besoin d'indiquer des informations relatives aux lettres de provisions, à l'acquisistion/cession de la charge, etc. En l'état actuel, nous sommes obligés de fragmenter ces informations entre la description de la fonction et les éléments biographiques, faute de balises véritablement spécifiques.</p>
+                  <p>Le modèle EAC-CPF, bien que reposant sur les technologies XML, peut par moment faire penser à un système de base de données relationnelle, dans le sens où l'enregistrement de chaque information, ainsi que la forme qu'elle doit prendre, laisse peut de liberté ; ce qui est un peu déroutant lorsque l'on est habitué à des formats permettant un encodage plus libre, comme la TEI par exemple.</p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

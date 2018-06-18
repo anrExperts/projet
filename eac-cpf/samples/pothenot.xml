@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>EXPERTS_SAMPLE_FICTIF03</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-05-24"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2018-06-08"></eventDateTime>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>Lettres de provisions de Pothenot, Gabriel (10 novembre 1753)</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>État civil reconstitué / Paris (en ligne)</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>BSHAF [à revoir]</sourceEntry>
+            </source>
+            <!-- SIV -->
+            <source>
+                <sourceEntry>MC/ET/VII/202, 10 mars 1713</sourceEntry>
+                <descriptiveNote>
+                    <p>Contrat d'apprentissage pour six ans, entre Laurent Pothenot, professeur de mathématiques au collège royal de France, demeurant rue des Sept-Voies, et Charles-François Bachelier, maître graveur, demeurant cour neuve du Palais, au profit de Gabriel Pothenot, âgé de dix-sept ans, fils du comparant, moyennant 350 livres, moitié payée comptant, moitié payable dans trois ans. L'apprenti sera nourri et logé.<!-- ⇒ confirmer qu’il s’agit du même (dates ok)--></p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/VIII/939, 13 octobre 1720</sourceEntry>
+                <descriptiveNote>
+                    <p>POTHENOT (Gabriel) Maître graveur Paris. § Témoin au mariage de sa soeur.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXVII/131, 28 septembre 1720</sourceEntry>
+                <descriptiveNote>
+                    <p>POTHENOT (Gabriel) maître graveur ; quai de Conty § mise en apprentissage chez ..</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XIX/677, 6 mars 1732</sourceEntry>
+                <descriptiveNote>
+                    <p>Pothenot (Gabriel) architecte rue Saint-Denis § Quittance</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/II/504, 21 août 1745</sourceEntry>
+                <descriptiveNote>
+                    <p>Devis des travaux de maçonnerie, serrurerie et gros fer, menuiserie, couverture, carrelage, vitrerie, plomberie, marbrerie, pavage de grès et peinture d'impression à faire pour la reconstruction d'une maison sise rue de l'Arbre-Sec, à l'angle de la rue des Prêtres-Saint-Germain-l'Auxerrois, d'après le rapport fait le 11 juin 1745 par Jacques-Richard Cochois, architecte expert bourgeois (Pièces jointes : 1745, 11 juin. Procès-verbal de visite de la maison à reconstruire, dressé par Jacques-Richard Cochois, architecte, et GabrielPothenot, greffier des bâtiments. Le prix de la reconstruction est évalué à 28.000 livres.)</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>MC/ET/XXXVI/509, 30 juillet 1763</sourceEntry>
+                <descriptiveNote>
+                    <p>Vente de maison rue du Moulin Vieux à Créteil par Gabriel POTHENOT, architecte expert, bourgeois de Paris, et Marie-Madeleine ROBILLARD, demeurant à Paris, rue Saintonge, paroisse Saint-Nicolas-des-Champs</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>Bibliothèque nationale de France, Département des manuscrits, NAF 12038</sourceEntry>
+                <descriptiveNote>
+                    <p>Laborde, Léon, Répertoire alphabétique de noms d'artistes et artisans, des XVIe, XVIIe et XVIIIe siècles, relevés dans les anciens registres de l'État civil parisien par le marquis Léon de Laborde, dit « Fichier Laborde ».</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>pothenotG1695</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Pothenot</part>
+                <part localType="forename">Gabriel</part>
+                <part localType="date">1696-1765</part>
+                <!-- ou alors :
+                    <part>Pothenot, Gabriel (1696-1765)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <dateRange>
+                    <fromDate standardDate="1696"/>
+                    <toDate standardDate="1765-05-23"/>
+                </dateRange>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Naissance</placeRole>
+                    <placeEntry>Paris, paroisse Saint-Étienne-du-Mont</placeEntry>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue des Sept-Voies</placeEntry>
+                    <date standardDate="1713"/>
+                    <descriptiveNote>
+                        <p>Adresse de son père, Me Laurent Pothenot</p>
+                    </descriptiveNote>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, Rue de Nevers</placeEntry>
+                    <date standardDate="1721"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, Rue Saint-Denis</placeEntry>
+                    <date standardDate="1732"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue Saintonge, paroisse Saint-Nicolas-des-Champs</placeEntry>
+                    <date standardDate="1772-07-13"/>
+                </place>
+                <place>
+                    <placeRole>Décès</placeRole>
+                    <placeEntry>Paris, rue Saintonge, paroisse Saint-Nicolas-des-Champs</placeEntry>
+                </place>
+            </places>
+            <!-- NOTA distinction entre fonctions et activités (professionnelles ou privées) -->
+            <functions localType="expert">
+                <function localType="verified">
+                    <term>Architecte expert bourgeois</term>
+                </function>
+                <function localType="sources">
+                    <term>architecte juré expert à Paris</term>
+                    <date localType="lettresProvisions" standardDate="1753-11-10"/>
+                </function>
+            </functions>
+            <function localType="other">
+                <term>maître graveur</term>
+            </function>
+            <biogHist>
+                <chronList>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1713"/>
+                            <toDate standardDate="1719"/>
+                        </dateRange>
+                        <event>Contrat d'apprentissage pour six ans, entre Laurent Pothenot, professeur de mathématiques au collège royal de France, demeurant rue des Sept-Voies, et Charles-François Bachelier, maître graveur, demeurant cour neuve du Palais, au profit de Gabriel Pothenot, âgé de dix-sept ans, fils du comparant, moyennant 350 livres, moitié payée comptant, moitié payable dans trois ans. L'apprenti sera nourri et logé.<!-- ⇒ confirmer qu’il s’agit du même (dates ok)--></event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1721-01-20"/>
+                        <event>Mariage avec Marie Madeleine Robillard</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1721-10-20"/>
+                        <event>Baptême de Marie Madeleine Pothenot</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <!-- épouse -->
+                <relationEntry>Robillard, Marie Madeleine</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/parentOf" xlink:type="simple">
+                <!-- Père -->
+                <relationEntry>Pothenot, Laurent</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/parentOf" xlink:type="simple">
+                <!-- mère -->
+                <relationEntry>Joisel, Anne</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- beau-père -->
+                <relationEntry>Robillard, Michel</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- frère /!\ homonymie avec le fils-->
+                <relationEntry>Pothenot, Nicolas</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <!-- fils -->
+                <relationEntry>Pothenot, Nicolas</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <!-- fille -->
+                <relationEntry>Pothenot, Marie Madeleine</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <!-- fille -->
+                <relationEntry>Pothenot, Marie Gabrielle</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- beau-frère -->
+                <relationEntry>Robillard, Jean</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/siblingOf" xlink:type="simple">
+                <!-- beau-frère -->
+                <relationEntry>Robillard, Michel</relationEntry>
+            </cpfRelation>
+            
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/mentorOf" xlink:type="simple">
+                <!-- maître d’apprentissage  -->
+                <relationEntry>Bachelier, Charles-François</relationEntry>
+            </cpfRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

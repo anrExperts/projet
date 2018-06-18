@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <!-- recordID required -->
+        <recordId>EXPERTS_SAMPLE_FICTIF01</recordId>
+        <!-- otherRecordID optional -->
+        <otherRecordId/>
+        <!-- maintenanceStatus required 
+        Valeurs possibles : 
+        - new
+        - revised
+        - deleted
+        - cancelled
+        - deletedSplit
+        - deletedReplaced
+        -->
+        <maintenanceStatus>new</maintenanceStatus>
+        <!-- publicationStatus optional
+        valeurs possible
+        - approved
+        - inProcess
+        -->
+        <publicationStatus>inProcess</publicationStatus>
+        <!-- maintenanceAgency required 
+        nom de l'institution responsable de la création/maintenance de l'entrée EAC
+        -->
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <!--otherAgencyCode optional
+                <otherAgencyCode localType=""></otherAgencyCode>-->
+            <!-- agencyName required
+            pas de sous élément-->
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+            <!--descriptiveNote optional
+                <descriptiveNote>
+                <p></p>
+            </descriptiveNote>-->
+        </maintenanceAgency>
+        <!-- languageDeclaration optional-->
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <!-- conventionDeclaration optional, repeatable -->
+        <conventionDeclaration>
+            <!-- référence aux normes utilisées pour former la notice. -->
+            <citation/>
+        </conventionDeclaration>
+        <!-- localTypeDeclaration optional, repeatable-->
+        <localTypeDeclaration>
+            <abbreviation/>
+            <citation/>
+        </localTypeDeclaration>
+        <!-- localControl optional, repeatable -->
+        <localControl localType=""/>
+        <!-- maintenanceHistory required -->
+        <maintenanceHistory>
+            <!-- maintenanceEvent repeatable -->
+            <maintenanceEvent>
+                <!-- eventType 
+                valeurs possible : 
+                - cancelled
+                - created
+                - deleted
+                - derived
+                -revised
+                - updated-->
+                <eventType>created</eventType>
+                <eventDateTime>2018-04-24</eventDateTime>
+                <!-- agentType
+                valeurs possible : 
+                - human
+                - machine-->
+                <agentType>human</agentType>
+                <agent>Notice fictive rédigée par Josselin Morvan, dans le cadre du projet ANR Experts.</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <!--sources
+            description des sources utilisées pour compléter cette notice -->
+        <sources>
+            <!-- source repeatable -->
+            <!-- possibilité de mettre les références bibliographiques sous l'espace de nom tei avec objectXMLWrap -->
+            <source/>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <!-- entityId optional, repeatable -->
+            <entityId>ozoirJean</entityId>
+            <entityType>person</entityType>
+            <!-- NOTA nameEntryParallel peut être utilisé pour des formes // du nom (formes officielles dans ≠ langues p. ex.)-->
+            <nameEntry>
+                <part localType="surname">Ozoir</part>
+                <part localType="forename">Jean</part>
+                <part localType="particle">d'</part>
+                <part localType="date">1700-1766</part>
+                <!-- ou alors :
+                    <part>Ozoir, jean d' (1700-1766)</part>
+                -->
+                <!-- useDates peut être utiliser pour dater une forme du nom (uniquement lorsque nameEntryParallel n'est pas utilisé) -->
+                <!--<useDates></useDates>-->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+            <nameEntry localType="variante">
+                <part localType="surname">Osoyr</part>
+                <part localType="forename">Jean</part>
+                <part localType="particle">d'</part>
+                <!--<alternativeForm></alternativeForm>-->
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <!-- Si les sources se contredisent sur le dates, dateSet peut permettre de régler le problème -->
+                <dateSet>
+                    <dateRange>
+                        <fromDate standardDate="1700-05-25">25 mai 1700</fromDate>
+                        <toDate standardDate="1766-11-29">29 novembre 1766</toDate>
+                    </dateRange>
+                    <!-- Si nous avons une source indiquant une autre date de naissance.
+                    Q° comment lier cette information à la source ?-->
+                    <dateRange localType="alt">
+                        <fromDate standardDate="1700-06-25">25 juin 1700</fromDate>
+                        <toDate standardDate="1766-11-29">29 novembre 1766</toDate>
+                    </dateRange>
+                    <!-- NOTA, nous pouvons également utiliser un simple élément date pour la contradiction -->
+                    <date standardDate="1700-06-25">25 juin 1700</date>
+                </dateSet>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Birthplace</placeRole>
+                    <placeEntry altitude="389" latitude="48.866667" longitude="10">Paris</placeEntry>
+                    <!-- NOTA, nous avons ici une répétition, il faut regarder où cette information sur la date de naissance peut être placée de la manière la plus judicieuse-->
+                    <date standardDate="1700-05-25">25 mai 1700</date>
+                </place>
+                <place>
+                    <placeRole>adresse</placeRole>
+                    <!-- NOTA, contrairement à la remarque ci-dessus, la date peut faire sens ici -->
+                </place>
+            </places>
+            <!-- NOTA distinction entre fonctions et activités (professionnelles ou privées) -->
+            <functions localType="expert">
+                <!-- ajouter une @type ? -->
+                <function>
+                    <!-- champ Expert (type) -->
+                    <term>expert-bourgeois</term>
+                    <dateSet>
+                        <!-- NOTA, on ne peut donner que des dates (pour l'achat/vente de l'office, on ne peut préciser de/à qui par exemple) -->
+                        <date localType="reception"/>
+                        <date localType="resignation"/>
+                        <date localType="sell"/>
+                        <dateRange localType="expertise">
+                            <fromDate/>
+                            <toDate/>
+                        </dateRange>
+                    </dateSet>
+                </function>
+                <function localType="other">
+                    <term>syndic</term>
+                </function>
+            </functions>
+            <!-- fonction principale (autres qu'expert) -->
+            <functions localType="main">
+                <function localType="other">
+                    <term>architecte</term>
+                    <!-- TODO formation, maîtrise -->
+                    <!-- Q° comment représenter les formations ? -->
+                </function>
+            </functions>
+            <occupations localType="expertise">
+                <occupation>
+                    <term/>
+                </occupation>
+            </occupations>
+            <occupations localType="intellectual"> </occupations>
+            <occupations localType="social"> </occupations>
+            <biogHist>
+                <!-- éléments biographiques, succession de paragraphes, mais également listes chronologiques, listes-->
+                <!--Q° peut-on imaginer plusieurs listes (chronologiques ?) typée en fonction des informations souhaitées (formation, etc)-->
+                <chronList>
+                    <chronItem localType="workmanship">
+                        <date>1720</date>
+                        <event>maîtrise</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation cpfRelationType="family">
+                <!-- Il existe aussi <structureOrGenealogy /> (dans <description> mais ça ne me semble pas adapté à notre propos car on ne crée pas de liens -->
+                <relationEntry localType="wife">La Ferrière, Jeanne de</relationEntry>
+            </cpfRelation>
+            <cpfRelation cpfRelationType="associative">
+                <relationEntry localType="officePurchasedFrom">Vendplein, Jean</relationEntry>
+            </cpfRelation>
+            <resourceRelation>
+                <relationEntry/>
+            </resourceRelation>
+            <functionRelation>
+                <relationEntry/>
+            </functionRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>
