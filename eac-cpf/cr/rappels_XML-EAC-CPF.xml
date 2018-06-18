@@ -28,7 +28,7 @@
                   <lb/>Langage de balisage / extensible</p>
                <p>Un langage de balisage est fondé sur l'emploi de balises simples, et compréhensibles par l'homme, pour décrire du texte.</p>
                <p>Si nous devions encoder la phrase : <q>On emploi <foreign xml:lang="lat"><emph>a priori</emph></foreign> les italiques pour les locutions et termes empruntés à d'autres langues</q>, la question posée serait de savoir comment décrire la locution latine <emph><foreign xml:lang="lat">a priori</foreign></emph>.</p>
-               <p>Avec XML il ne s'agit pas de dire qu'elle est représentée en italique, mais d'expliquer pourquoi elle est en italique. XML permet donc de <emph>dissocier la forme et le contenu</emph>, la mise en forme étant à part.</p>
+               <p>Avec XML il ne s'agit pas de dire qu'elle est représentée en italique, mais d'expliquer pourquoi elle est en italique. XML permet donc de <emph>dissocier la forme et le contenu</emph>, la mise en forme étant traitée à part.</p>
                <p>Exemple d'encodage en XML :</p>
                <egXML xmlns="http://www.tei-c.org/ns/Examples">On emploi <locutionEtrangere>a priori</locutionEtrangere> les italiques pour les locutions et termes empruntés à d'autres langues</egXML>
                <p>XML est également dit <emph>extensible</emph>, c'est à dire qu'il ne propose pas de « jeu de balises » prédéfini que nous pourrions utiliser en toutes circonstances.</p>
