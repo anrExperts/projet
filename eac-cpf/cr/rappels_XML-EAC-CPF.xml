@@ -28,20 +28,20 @@
                   <lb/>Langage de balisage / extensible</p>
                <p>Un langage de balisage est fondé sur l'emploi de balises simples, et compréhensibles par l'homme, pour décrire du texte.</p>
                <p>Si nous devions encoder la phrase : <q>On emploi <foreign xml:lang="lat"><emph>a priori</emph></foreign> les italiques pour les locutions et termes empruntés à d'autres langues</q>, la question posée serait de savoir comment décrire la locution latine <emph><foreign xml:lang="lat">a priori</foreign></emph>.</p>
-               <p>Avec XML il ne s'agit pas de dire qu'elle est représentée en italique, mais d'expliquer pourquoi elle est en italique. XML permet de <emph>dissocier la forme et le contenu</emph>. La mise en forme est externalisée.</p>
+               <p>Avec XML il ne s'agit pas de dire qu'elle est représentée en italique, mais d'expliquer pourquoi elle est en italique. XML permet donc de <emph>dissocier la forme et le contenu</emph>, la mise en forme étant à part.</p>
                <p>Exemple d'encodage en XML :</p>
                <egXML xmlns="http://www.tei-c.org/ns/Examples">On emploi <locutionEtrangere>a priori</locutionEtrangere> les italiques pour les locutions et termes empruntés à d'autres langues</egXML>
                <p>XML est également dit <emph>extensible</emph>, c'est à dire qu'il ne propose pas de « jeu de balises » prédéfini que nous pourrions utiliser en toutes circonstances.</p>
-               <p>En réalité, XML formule un ensemble de règles sur ce que doit être un document <emph>bien formé</emph>, c'est à dire qui respecte des règles syntaxiques strictes, et <emph>valide</emph>, c'est à dire conforme à un <emph>schéma</emph> ou à une <emph>DTD</emph> (<abbr>p. ex.</abbr> le schéma TEI, la DTD EAD, le schéma EAC-CPF, etc.).</p>
-               <p>Un schéma peut être considéré en quelque sorte comme un dictionnaire de balise.</p>
+               <p>En réalité, XML formule un ensemble de règles sur ce que doit être un document <emph>bien formé</emph>, c'est-à-dire qui respecte des règles syntaxiques strictes, et <emph>valide</emph>, c'est-à-dire conforme à un <emph>schéma</emph> ou à une <emph>DTD</emph> (<abbr>p. ex.</abbr> le schéma TEI, la DTD EAD, le schéma EAC-CPF, etc.).</p>
+               <p>Un schéma peut être considéré, entre autre, comme un dictionnaire de balises.</p>
                <p>Si nous reprenons le même exemple mais que nous décidons de l'encoder selon la TEI, nous obtiendrons :</p>
                <egXML xmlns="http://www.tei-c.org/ns/Examples">On emploi <foreign xml:lang="lat">a priori</foreign> les italiques pour les locutions et termes empruntés à d'autres langues</egXML>
                <p>XML est supporté par le <foreign xml:lang="eng">World Wide Web Consortium</foreign> (W3C), et son utilisation a été recommandée en France par la Direction générale de modernisation de l'État dans son <title>Référentiel général d'interopérabilité</title> publié en 2009.</p>
-               <p>Ce langage est perçu comme un excellent moyen de sécuriser et de diffuser ses données.</p>
+               <p>Ce langage est perçu comme un excellent moyen de sécuriser et de diffuser ses données :</p>
                <list>
-                  <item>C'est <emph>un format ouvert</emph>, particulièrement bien documenté et finalement assez simple : il ne s'agit que de texte et rien d'autre. On écarte donc d'emblée les difficultés liées à l'utilisation de formats propriétaires.</item>
-                  <item>C'est une format qui fait preuve d'une grande <emph>souplesse</emph> d'utilisation. Il est notamment possible de travailler sous plusieurs espaces de noms au sein d'un même document, afin de répondre à des problématiques bien précises.</item>
-                  <item>Enfin, c'est un excellent <emph>format pivot</emph>, c'est à dire qu'il est possible de exporter ses données XML vers d'autres formats facilement.</item>
+                  <item>C'est <emph>un format ouvert</emph>, particulièrement bien documenté et finalement assez simple : il ne s'agit que de texte, rien d'autre. On écarte donc d'emblée les difficultés liées à l'utilisation de formats propriétaires.</item>
+                  <item>C'est un format qui fait preuve d'une grande <emph>souplesse</emph> d'utilisation. Il est notamment possible de travailler sous plusieurs espaces de noms au sein d'un même document, afin de répondre à des problématiques bien précises.</item>
+                  <item>Enfin, c'est un excellent <emph>format pivot</emph>, c'est-à-dire qu'il est possible d'exporter ses données XML vers d'autres formats facilement.</item>
                </list>
             </div>
             <div>
@@ -51,7 +51,7 @@
                <p>L'EAC-CPF est un standard pour l'encodage et l'échange de <emph>notices d'autorité</emph>, dans le contexte des documents d'archives. Ce format est fondé sur la norme internationale <emph>ISAAR (CPF)</emph>.</p>
                <p>EAC-CPF a été pensé pour être utilisé en complément de l'<emph>EAD</emph>, le standard pour la description archivistique, afin de rendre compte du contexte dans lequel <q>les agents ont opéré et ont créé et/ou utilisé les documents d'archives</q>. Son objectif est donc avant tout de pouvoir traiter les agents (personnes, familles, institutions) qui produisent, utilisent ou conservent des archives.</p>
                <p>EAC-CPF permet également de décrire les relations entre les différents agents. Il est ensuite possible de lier ces informations aux descriptions des documents d'archives.</p>
-               <p>Notons enfin que EAC-CPF permet de préciser certaines informations en les liant à des <emph>vocabulaires contrôlés</emph>.</p>
+               <p>Notons enfin que EAC-CPF permet de qualifier certaines informations en les liant à des <emph>vocabulaires contrôlés</emph>.</p>
                <div>
                   <head>Structure d'un document EAC-CPF</head>
                   <p>Un document encodé en EAC-CPF contient deux éléments obligatoires : l'élément <gi>control</gi> et l'élément <gi>cpfDescription</gi>.</p>
@@ -191,7 +191,7 @@
                   </div>
                   <div>
                      <head>L'élément <gi>cpfDescription</gi></head>
-                     <p>L'élément <gi>cpfDescription</gi> et l'élément servant à la description de l'entité (personne, collectivité ou famille). Il peut contenir les sous-éléments suivants :</p>
+                     <p>L'élément <gi>cpfDescription</gi> est l'élément servant à la description de l'entité (personne, collectivité ou famille). Il peut contenir les sous-éléments suivants :</p>
                      <list>
                         <item><gi>identity</gi> : pour décrire l'identité de l'entité encodée</item>
                         <item><gi>description</gi> : contient des éléments de description formels conformes à la norme ISAAR (CPF)</item>
@@ -216,7 +216,7 @@
          <part>Adhenet, Thomas (1690-)</part>
          <!-- On notera que nous n'utiliserons pas d'élément de date pour signaler la naissance ou la mort. -->
          <!-- <UseDate /> est réservé pour la période d'utilisation d'un nom. -->
-         <!-- Il est également possible de signaler s'il s'agit d'un forme autorisée ou alternative. Nous prendrons soin de préciser la norme utilisées pour la rédaction. -->
+         <!-- Il est également possible de signaler s'il s'agit d'une forme autorisée ou alternative. Nous prendrons soin de préciser la norme utilisées pour la rédaction. -->
          <authorizedForm>AFNOR_Z44-061</authorizedForm>
       </nameEntry>
    </identity>
@@ -316,34 +316,22 @@
                      <div>
                         <head><gi>function</gi> et <gi>functions</gi></head>
                         <p>À l'instar des lieux, il est possible de préciser une ou plusieurs fonctions rattachées à l'entité décrite. En cas de contradiction entre les sources, l'attribut <att>localType</att> pourrait permettre que préciser les informations. Dans l'hypothèse où un des experts passerait d'un colonne à l'autre, cette solution devra être évaluée.</p>
-                        <p>Le schéma EAC-CPF ne semble toutefois pas proposer de solutions satisfaisantes concernant les « événements » qui peuvent être rattachés à une fonction (lettre de provision, acquisition/cession, etc.). Une solution serait de donner un <att>localType</att> à un élément <gi>date</gi>, mais cela implique de définir une liste des types possibles ; qu'en sera-t-il si nous souhaitons faire apparaître d'autres informations ?</p>
-                        <p>Une autre solution serait de doubler l'élément <gi>functions</gi> (au pluriel) et de le typer. Cette dernière distinction pourrait également être utilisée si nous souhaitons distinguer des « types » de fonctions.</p>
+                        <p>Le schéma EAC-CPF ne semble toutefois pas proposer de solutions satisfaisantes concernant les « événements » qui peuvent être rattachés à une fonction (lettres de provisions, acquisition/cession, etc.). Une solution serait de donner un <att>localType</att> à un élément <gi>date</gi>, mais cela implique de définir une liste des types possibles ; qu'en sera-t-il si nous souhaitons faire apparaître d'autres informations ?</p>
+                        <p>Une autre difficulté réside dans l'intitulé des fonctions : Angot est par exemple qualifié d'<q>architecte entrepreneur de bâtiments</q> dans les sources, alors qu'il est dans la colonne des <q>experts entrepreneurs</q>. Une solution serait de doubler l'élément <gi>function</gi> et de le typer. Nous pourrions utiliser ce même principe au niveau supérieur, pour l'élément <gi>functions</gi> (au pluriel), afin de distinguer des types de fonctions (expertise, formation, etc.).</p>
                         <p>Il est possible de lier une fonction à un vocabulaire contrôlé pour la préciser.</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-   <!-- Vavasseur Desperriers -->
-   <functions>
-      <function>
-         <!-- MC/ET/XXVII/402, 5 avril 1779 -->
-         <term>Architecte expert juré du roi</term>
-         <date localType="provisionsLetters" standardDate="1773-01-13"/>
-      </function>
+   <functions localType="expert">
       <function localType="verified">
-         <!-- Almanach royal, deuxième colonne -->
          <term>Expert entrepreneur</term>
       </function>
-   </functions>
-   <!-- Autre solution -->
-   <functions localType="verified">
-      <function>
-         <!-- Almanach royal, deuxième colonne -->
-         <term>Expert entrepreneur</term>
+      <function localType="sources">
+         <term>Architecte entrepreneur de bâtiments</term>
+         <date localType="lettresProvisions" standardDate="1772-09-16" />
       </function>
    </functions>
-   <functions>
+   <functions localType="other">
       <function>
-         <!-- MC/ET/XXVII/402, 5 avril 1779 -->
-         <term>Architecte expert juré du roi</term>
-         <date localType="provisionsLetters" standardDate="1773-01-13"/>
+         <term>maçon</term>
       </function>
    </functions>
 </egXML>
@@ -370,7 +358,7 @@
                               </chronList>
                            </biogHist>
                         </egXML>
-                        <p>L'élément <gi>chronList</gi> peut être répété au sein de <gi>biogHist</gi> et précisé par un attribut <att>localType</att>. Nous pourrions utiliser cette méthode pour, par exemple, rattacher des événements à une fonctions (lettre de provision, acquisition/cession, etc.).</p>
+                        <p>L'élément <gi>chronList</gi> peut être répété au sein de <gi>biogHist</gi> et précisé par un attribut <att>localType</att>. Nous pourrions utiliser cette méthode pour, par exemple, rattacher des événements à une fonction (lettres de provisions, acquisition/cession, etc.).</p>
                         <p>Il n'est pas possible de lier un événement à un vocabulaire contrôlé.</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
    <biogHist>
@@ -447,11 +435,11 @@
                </div>
                <div>
                   <head>Points à discuter</head>
-                  <p>L'encodage des six premiers experts était intéressant car cela a permis de tester le modèle en conditions réelles et de soulever des questions.</p>
+                  <p>L'encodage des six premiers experts était intéressant car il a permis de tester le modèle en conditions réelles et de soulever des questions.</p>
                   <p>Concernant les sources consultées pour bâtir les notices, s'il est possible de les déclarer, il est en revanche assez difficile, voire impossible, de les relier aux différentes informations, ce qui pourrait être problématique lorsque les sources se contredisent. C'est un des principaux inconvénients du modèle EAC-CPF. Lorsque c'est possible, nous pourrions utiliser un élément <gi>descriptiveNote</gi>, toutefois il ne s'agirait que d'une description en texte libre et non d'un véritable lien crée pour indiquer une relation entre une information et sa source.</p>
-                  <p>Le modèle de données EAC-CPF oblige à en quelque sorte à fragmentée les données. Il est toutefois étonnamment facile de répéter certaines informations. Il conviendra de mener une véritable réflexion sur ce point, afin de déterminer les méthodes d'encodage les plus appropriées pour ne pas répéter les informations à différents endroits, ce qui permettra également le respect les normes archivistiques.</p>
-                  <p>Le caractère très contraint du schéma EAC-CPF se fait sentir par moment, et l'ajout de certaines balises pourrait être appréciable afin de décrire plus finement nos données : par exemple lorsque nous décrirons une fonction, nous pourrions avoir besoin d'indiquer des informations relatives aux lettres de provisions, à l'acquisistion/cession de la charge, etc. En l'état actuel, nous sommes obligés de fragmenter ces informations entre la description de la fonction et les éléments biographiques, faute de balises véritablement spécifiques.</p>
-                  <p>Le modèle EAC-CPF, bien que reposant sur les technologies XML, peut par moment faire penser à un système de base de données relationnelle, dans le sens où l'enregistrement de chaque information, ainsi que la forme qu'elle doit prendre, laisse peut de liberté ; ce qui est un peu déroutant lorsque l'on est habitué à des formats permettant un encodage plus libre, comme la TEI par exemple.</p>
+                  <p>Le modèle de données EAC-CPF oblige à en quelque sorte à fragmenter les données. Il est toutefois étonnamment facile de répéter certaines informations. Il conviendra de mener une véritable réflexion sur ce point, afin de déterminer les méthodes d'encodage les plus appropriées pour ne pas répéter les informations à différents endroits, ce qui permettra également le respect des normes archivistiques.</p>
+                  <p>Le caractère très contraignant du schéma EAC-CPF se fait sentir par moment, et l'ajout de certaines balises pourrait être appréciable afin de décrire plus finement nos données : par exemple, lorsque nous décrirons une fonction, nous pourrions avoir besoin d'indiquer des informations relatives aux lettres de provisions, à l’acquisition/cession de la charge, etc. En l'état actuel, nous sommes obligés de fragmenter ces informations entre la description de la fonction et les éléments biographiques, faute de balises véritablement spécifiques, et <foreign>quid</foreign> du lien entre ces informations.</p>
+                  <p>Enfin, ce manque de liberté concernant l'encodage est un peu déroutant lorsque l'on est habitué à des formats autorisant un balisage plus libre, comme la TEI par exemple.</p>
                </div>
             </div>
          </div>
