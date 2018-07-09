@@ -441,6 +441,12 @@
                   <p>Le caractère très contraignant du schéma EAC-CPF se fait sentir par moment, et l'ajout de certaines balises pourrait être appréciable afin de décrire plus finement nos données : par exemple, lorsque nous décrirons une fonction, nous pourrions avoir besoin d'indiquer des informations relatives aux lettres de provisions, à l’acquisition/cession de la charge, etc. En l'état actuel, nous sommes obligés de fragmenter ces informations entre la description de la fonction et les éléments biographiques, faute de balises véritablement spécifiques, et <foreign>quid</foreign> du lien entre ces informations.</p>
                   <p>Enfin, ce manque de liberté concernant l'encodage est un peu déroutant lorsque l'on est habitué à des formats autorisant un balisage plus libre, comme la TEI par exemple.</p>
                </div>
+               <div>
+                  <head>Remarques sur l'encodage des offices</head>
+                  <p>L'encodage des offices semble confirmer les remarques du dessus.</p>
+                  <p>La principale interrogation concerne cependant les éléments de datation. En effet, concernant les offices, il s'agit de rendre compte de leur généalogie. Cette dernière peut vraisemblablement être décrite avec les éléments <gi>cpfRelation</gi>, mais cette balise ne nous permet pas d'atteindre un niveau de granularité suffisant (il n'existe rien pour encoder les prix de vente des offices, ni pour distinguer les dates de possession des dates d'exercice, mais ces dernières pourront peut être trouver plus facilement leur place dans les fiches expert ?).</p>
+                  <p>Il conviendra également de s'interroger quant à la description des vacances d'office, ou encore lorsque l'office passe entre les mains des héritiers de l'expert, mais que ceux-ci n'exercent pas.</p>
+               </div>
             </div>
          </div>
       </body>

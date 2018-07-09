@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>EXPERTS_SAMPLE_07</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-06-20"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>AN/MC/ET/XXXVI/517</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Lettres de provisions, 16 juillet 1738</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN/MC/ET/CXXI/360</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN/MC/LIII/382</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN/Z/1o/186B</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN/MC/ET/VI/812</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN/Y/5278, 2/09/1777</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Testament de Cécile Brethe de Clermont : ét. VI, 18/01/1780</sourceEntry>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>arnoultT1707</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Arnoult</part>
+                <part localType="forename">Thomas</part>
+                <part localType="date">1707-0777</part>
+                <!-- ou alors :
+                    <part>Arnoult, Thomas (1707-1777)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <dateRange>
+                    <fromDate standardDate="1707"/>
+                    <toDate notAfter="1777-08-29"/>
+                    <!-- IAD -->
+                </dateRange>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue des Tournelles</placeEntry>
+                    <date standardDate="1740"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, quai de la Megisserie</placeEntry>
+                    <date standardDate="1754-01-12"/>
+                </place>
+            </places>
+            <!-- NOTA distinction entre fonctions et activités (professionnelles ou privées) -->
+            <functions localType="expert">
+                <function localType="verified">
+                    <term>Expert entrepreneur</term>
+                    <dateSet>
+                        <date localType="lettresProvisions" standardDate="1772-09-16"/>
+                        <date localType="vente" standardDate="1765-12-24"/>
+                        <dateRange>
+                            <fromDate standardDate="1738"/>
+                            <toDate standardDate="1766-01-31"/>
+                            <!-- Q° il reste honoraire jusqu'en 1777 => voir plus bas-->
+                        </dateRange>
+                    </dateSet>
+                    <!-- Almanach -->
+                    <descriptiveNote>
+                        <p>AN/MC/ET/XXXVI/517 : Fortin promet, dans l’acte de vente de l’office, de ne pas se faire pourvoir avant le 1er février 1766 [et de fait, Arnoult semble exercer encore en janvier 1766]</p>
+                    </descriptiveNote>
+                </function>
+                <function localType="verified">
+                    <term>Honoraire</term>
+                    <dateRange>
+                        <fromDate standardDate="1766"/>
+                        <toDate notAfter="1777-08-29"/>
+                        <!-- IAD -->
+                    </dateRange>
+                </function>
+                <function localType="sources">
+                    <term>architecte juré expert</term>
+                    <date standardDate="1765-12-24"/>
+                    <descriptiveNote>
+                        <p>AN/MC/ET/XXXVI/517 : acte de vente à Fortin</p>
+                    </descriptiveNote>
+                </function>
+                <function localType="sources">
+                    <term>juré expert entrepreneur de bâtiments</term>
+                    <date standardDate="1762-12-23"/>
+                    <descriptiveNote>
+                        <p>AN/MC/LIII/382</p>
+                    </descriptiveNote>
+                </function>
+                <function localType="sources">
+                    <term>architecte juré expert des bâtiments et ancien officier du roi</term>
+                    <date standardDate="1754-01-12"/>
+                    <descriptiveNote>
+                        <p>AN/Z/1o/186B</p>
+                    </descriptiveNote>
+                </function>
+            </functions>
+            <biogHist>
+                <chronList>
+                    <chronItem>
+                        <date standardDate="1738-07-16"/>
+                        <event>Lettres de provision</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1738-08-12"/>
+                        <event>Réception</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1765-12-24"/>
+                        <event>Vente de l'office à Fortin</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <!-- épouse -->
+                <relationEntry>Brethe de Clermont, Cécile E. J.</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <relationEntry>Arnoult, Marie Cécile Alexandrine</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <relationEntry>Arnoult, Antoine Marcel</relationEntry>
+            </cpfRelation>
+
+            <!-- predecessor -->
+            <cpfRelation>
+                <relationEntry>Fremiot, Nicolas</relationEntry>
+            </cpfRelation>
+
+            <!-- successor -->
+            <cpfRelation>
+                <relationEntry>Fortin, Pierre Jacques</relationEntry>
+            </cpfRelation>
+
+        </relations>
+    </cpfDescription>
+</eac-cpf>

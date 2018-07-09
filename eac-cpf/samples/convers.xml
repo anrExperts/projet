@@ -2,7 +2,7 @@
 <?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
 <eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
     <control>
-        <recordId>EXPERTS_SAMPLE_FICTIF06</recordId>
+        <recordId>EXPERTS_SAMPLE_06</recordId>
         <maintenanceStatus>new</maintenanceStatus>
         <publicationStatus>inProcess</publicationStatus>
         <maintenanceAgency>
@@ -42,7 +42,7 @@
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
-                <eventDateTime standardDateTime="2018-06-18"></eventDateTime>
+                <eventDateTime standardDateTime="2018-06-18"/>
                 <agentType>human</agentType>
                 <agent>Josselin Morvan</agent>
             </maintenanceEvent>
@@ -202,7 +202,7 @@
                 <!-- amis de Louis Convers, ingénieur et architecte des bâtiments -->
                 <relationEntry>Chamois, Charles</relationEntry>
             </cpfRelation>
-            
+
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/Relationship" xlink:type="simple">
                 <!-- amie de sa femme -->
                 <relationEntry>Vuyet, Antoinette</relationEntry>

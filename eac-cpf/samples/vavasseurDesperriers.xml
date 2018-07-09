@@ -2,14 +2,14 @@
 <?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
 <eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
     <control>
-        <recordId>EXPERTS_SAMPLE_FICTIF04</recordId>
+        <recordId>EXPERTS_SAMPLE_04</recordId>
         <maintenanceStatus>new</maintenanceStatus>
         <publicationStatus>inProcess</publicationStatus>
         <maintenanceAgency>
             <!-- agencyCode optional
             forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
             <agencyCode>FR-CNRS</agencyCode>
-            <agencyName>Centre national de la recherche scientifique</agencyName>    
+            <agencyName>Centre national de la recherche scientifique</agencyName>
         </maintenanceAgency>
         <languageDeclaration>
             <!-- languageCode forme : [a-z]{3} -->
@@ -46,7 +46,7 @@
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
-                <eventDateTime standardDateTime="2018-06-08"></eventDateTime>
+                <eventDateTime standardDateTime="2018-06-08"/>
                 <agentType>human</agentType>
                 <agent>Josselin Morvan</agent>
             </maintenanceEvent>
@@ -133,7 +133,8 @@
                     <date localType="lettresProvisions" standardDate="1773-01-13"/>
                 </function>
             </functions>
-            <biogHist><chronList>
+            <biogHist>
+                <chronList>
                     <chronItem>
                         <date standardDate="1779"/>
                         <event>Mariage avec Geneviève Peuvret</event>
@@ -146,7 +147,7 @@
                 <!-- épouse -->
                 <relationEntry>Peuvret, Geneviève</relationEntry>
             </cpfRelation>
-            
+
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
                 <!-- Juré du roi, expert des bâtiments, architecte de police, témoin lors de son mariage  -->
                 <relationEntry>Egresset, Guillaume</relationEntry>

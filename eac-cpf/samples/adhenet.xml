@@ -4,7 +4,7 @@
     <!-- TODO NOTA : Almanach de 1767 Il est qualifié de d'honoraire, adresse Rue des Poulies, anc. Hôtel de Conty. -->
     <control>
         <!-- recordID required -->
-        <recordId>EXPERTS_SAMPLE_FICTIF01</recordId>
+        <recordId>EXPERTS_SAMPLE_01</recordId>
         <maintenanceStatus>new</maintenanceStatus>
         <publicationStatus>inProcess</publicationStatus>
         <maintenanceAgency>
@@ -232,7 +232,7 @@
         </description>
         <relations>
             <!-- Q° Comment lier ces informations aux sources ? -->
-            <cpfRelation  xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
                 <relationEntry>Lardin, Marie Anne</relationEntry>
             </cpfRelation>
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
@@ -264,7 +264,7 @@
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/friendOf" xlink:type="simple">
                 <relationEntry>Bardon, Jérôme</relationEntry>
             </cpfRelation>
-            
+
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/Relationship" xlink:type="simple">
                 <!-- Il a été nommé et désigné par la veuve d’Etienne Le Roy -->
                 <relationEntry>La veuve d'Étienne Le Roy</relationEntry>

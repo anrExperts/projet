@@ -2,7 +2,7 @@
 <?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
 <eac-cpf xmlns="urn:isbn:1-931666-33-4">
     <control>
-        <recordId>EXPERTS_SAMPLE_FICTIF05</recordId>
+        <recordId>EXPERTS_SAMPLE_05</recordId>
         <maintenanceStatus>new</maintenanceStatus>
         <publicationStatus>inProcess</publicationStatus>
         <maintenanceAgency>
@@ -44,7 +44,7 @@
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
-                <eventDateTime standardDateTime="2018-06-18"></eventDateTime>
+                <eventDateTime standardDateTime="2018-06-18"/>
                 <agentType>human</agentType>
                 <agent>Josselin Morvan</agent>
             </maintenanceEvent>
@@ -119,7 +119,7 @@
     </control>
     <cpfDescription>
         <identity>
-            
+
             <entityId>vedyJ1697</entityId>
             <entityType>person</entityType>
             <nameEntry>

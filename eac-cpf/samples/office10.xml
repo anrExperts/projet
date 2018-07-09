@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>OFFICE_SAMPLE_01</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-06-21"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>Lettres de provisions de Nicolas Fremiot</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Lettres de provisions de Thomas Arnoult</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>MC/XXXVI/517</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Lettres de provisions de Pierre Jacques Fortin</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Lettres de provisions de Médéric Joseph Chabouille</sourceEntry>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>office10</entityId>
+            <entityType>corporateBody</entityType>
+            <nameEntry>
+                <part>Office n°10<!-- TODO comment nommer les offices ? --></part>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <dateRange>
+                    <fromDate standardDate="1690"/>
+                    <toDate standardDate="1791"/>
+                </dateRange>
+            </existDates>
+            <legalStatus>
+                <term>office d'expert-juré</term>
+            </legalStatus>
+            <mandates>
+                <mandate>
+                    <citation>Édit de mai 1690 portant création de cinquante experts-jurés</citation>
+                </mandate>
+                <mandate>
+                    <citation>Édit de juillet 1690 portant création en chaque ville du royaume où il y a bailliage, sénéchaussée, viguerie, ou autre siége et jurisdiction royale, de trois experts, et un greffier de l’écritoire dans chacune de ces villes pour recevoir leurs rapports.</citation>
+                </mandate>
+                <mandate>
+                    <citation>Édit de juillet 1690 portant suppression des offices d'arpenteurs-priseurs de terre et création de trois offices d'experts-priseurs et arpenteurs jurés dans chacune des villes où il y a parlement, chambre des comptes etc.</citation>
+                </mandate>
+                <mandate>
+                    <citation>Édit de mars 1696 portant création d’offices d’experts-priseurs et arpenteurs jurés, par augmentation du nombre fixé par les édits des mois de Mai, Juillet, et Décembre 1690.</citation>
+                </mandate>
+            </mandates>
+            <structureOrGenealogy>
+                <p><!-- a-t-on des informations sur la structure des offices ? Les experts travaillent-ils seuls ? --></p>
+                <!-- Note de Juliette : des commis et apprentis peuvent être présents mais c'est plus lié à leur activité d'entrepreneur ou d'architecte .-->
+            </structureOrGenealogy>
+            <biogHist>
+                <chronList>
+                    <chronItem>
+                        <date standardDate="1690"/>
+                        <event>Création</event>
+                    </chronItem>
+                    <!-- NOTA : les acquisitions devraient, peut-être, plutôt être traitées avec les relations 
+                    mais nous n'avons rien pour indiquer les sommes ou autres informations-->
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1690"/>
+                            <toDate standardDate="1715"/>
+                        </dateRange>
+                        <event>Acquisition par Pierre Nicolas Delespine pour 6000 l. t.</event>
+                    </chronItem>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1721"/>
+                            <toDate standardDate="1738"/>
+                        </dateRange>
+                        <event>Acquisition par Nicolas Fremiot</event>
+                    </chronItem>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1738"/>
+                            <toDate standardDate="1766"/>
+                        </dateRange>
+                        <event>Acquisition par Thomas Arnoult</event>
+                    </chronItem>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1766-12-24"/>
+                            <toDate standardDate="1774"/>
+                        </dateRange>
+                        <event>Acquisition par Pierre Jacques Fortin pour 6000 l. t.</event>
+                        <!-- Arnoult résigne en faveur de Fortin -->
+                    </chronItem>
+                    <chronItem>
+                        <dateRange>
+                            <fromDate standardDate="1774-08-16"/>
+                            <toDate standardDate="1791"/>
+                        </dateRange>
+                        <event>Acquisition par Médéric Joseph Chabouille. Fortin paie le centième denier et résigne le 16 août 1774 ; il paie aussi le droit de vingt-quatrième denier aux revenus casuels.</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation>
+                <relationEntry localType="owner">Delespine, Pierre Nicolas</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1690"/>
+                    <toDate standardDate="1715"/>
+                </dateRange>
+                <descriptiveNote>
+                    <p>acquisition pour 6000 l. t.</p>
+                </descriptiveNote>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry localType="owner">Fremiot, Nicolas</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1721"/>
+                    <toDate standardDate="1738"/>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Les lettres de provisions Nicolas Fremiot datent de 1721, mais il a exercé de 1723 à 1738.</p>
+                </descriptiveNote>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry localType="owner">Arnoult, Thomas</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1738"/>
+                    <toDate standardDate="1766"/>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Les lettres de provisions de Thomas Arnoult datent de 1739, mais il a exercé de 1738 à 1766. Il sera par la suite honoraire jusqu'en 1777.</p>
+                </descriptiveNote>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry localType="owner">Fortin, Pierre Jacques</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1766-12-24"/>
+                    <toDate standardDate="1774"/>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Pierre Jacques Fortin acquiert l'office pour 6000 l. t. le 24 décembre 1766, alors que Arnoult résigne en sa faveur.</p>
+                </descriptiveNote>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry localType="owner">Chabouille, Médéric Joseph</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1774-08-16"/>
+                    <toDate standardDate="1791"/>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Fortin paie le centième denier et résigne le 16 août 1774 ; il paie aussi le droit de vingt quatrième denier aux revenus casuels</p>
+                </descriptiveNote>
+            </cpfRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

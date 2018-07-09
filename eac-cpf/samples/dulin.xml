@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
+<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
+    <control>
+        <recordId>EXPERTS_SAMPLE_08</recordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <publicationStatus>inProcess</publicationStatus>
+        <maintenanceAgency>
+            <!-- agencyCode optional
+            forme : (([A-Z]{2})|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})-->
+            <agencyCode>FR-CNRS</agencyCode>
+            <agencyName>Centre national de la recherche scientifique</agencyName>
+        </maintenanceAgency>
+        <languageDeclaration>
+            <!-- languageCode forme : [a-z]{3} -->
+            <language languageCode="fra"/>
+            <!-- languageCode forme : [A-Z][a-z]{3} -->
+            <script scriptCode="Latn"/>
+        </languageDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISAAR(CPF)</abbreviation>
+            <citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ica.org" xlink:type="simple">Norme internationale pour les notices d’autorité archivistiques (Collectivités, personnes, familles) du Conseil international des archives, 2ème édition, 1996.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_NF_Z44-060</abbreviation>
+            <citation>Norme NF Z 44-060, octobre 1983, Catalogue d’auteurs et d’anonymes : forme et structure des vedettes des collectivités auteur. Norme ISO 8601:2004 Éléments de données et formats d’échange -- Échange d’information -- Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>AFNOR_Z44-061</abbreviation>
+            <citation>AFNOR NF Z44-061 Juin 1986 Documentation – Catalogage – Forme et structure des vedettes noms de personnes, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <abbreviation>ISO8601</abbreviation>
+            <citation> Norme ISO 8601:2004 Éléments de données et formats d’échange — Échange d’information – Représentation de la date et de l’heure.</citation>
+        </conventionDeclaration>
+
+        <localControl localType="detailLevel">
+            <term>in progress</term>
+        </localControl>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2018-06-21"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <sourceEntry>Almanach royal</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN/MC/ET/XXVI/331</sourceEntry>
+                <!--<descriptiveNote>
+                    <p>Contrat d'apprentissage de Michel Léveillé ?</p>
+                </descriptiveNote>-->
+            </source>
+            <source>
+                <sourceEntry>AN/MC/ET/CXXII/679</sourceEntry>
+                <descriptiveNote>
+                    <p>Testament</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>AN/MC/ET/CXII/680</sourceEntry>
+                <descriptiveNote>
+                    <p>Inventaire après décès</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityId>dulinN1707</entityId>
+            <entityType>person</entityType>
+            <nameEntry>
+                <part localType="surname">Dulin</part>
+                <part localType="forename">Nicolas</part>
+                <part localType="date">-1751</part>
+                <!-- ou alors :
+                    <part>Dulin, Nicolas (-1751)</part>
+                -->
+                <authorizedForm>AFNOR_Z44-061</authorizedForm>
+            </nameEntry>
+            <nameEntry>
+                <part localType="surname">Ulin</part>
+                <part localType="forename">Nicolas, d'</part>
+                <part localType="date">-1751</part>
+                <alternativeForm>AFNOR_Z44-061</alternativeForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <dateRange>
+                    <toDate notAfter="1751-05-10"/>
+                    <!-- IAD -->
+                </dateRange>
+            </existDates>
+            <places>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue Neuve-Saint-Eustache</placeEntry>
+                    <date standardDate="1711-01-19"/>
+                </place>
+                <place>
+                    <placeRole>Adresse</placeRole>
+                    <placeEntry>Paris, rue de Grenelle, proche la Douane</placeEntry>
+                    <date standardDate="1712"/>
+                </place>
+            </places>
+            <!-- NOTA distinction entre fonctions et activités (professionnelles ou privées) -->
+            <functions localType="expert">
+                <function localType="verified">
+                    <term>Expert entrepreneur</term>
+                    <dateRange>
+                        <fromDate standardDate="1712"/>
+                        <!-- Almanach -->
+                        <toDate notAfter="1751-01-12"/>
+                        <!-- IAD ? -->
+                    </dateRange>
+                </function>
+            </functions>
+            <function localType="other">
+                <term>Architecte du roi</term>
+                <!-- Almanach -->
+            </function>
+            <biogHist>
+                <chronList>
+                    <chronItem>
+                        <date standardDate="1711-01-19"/>
+                        <event>Michel Léveillé, 18 ans, est placé en apprentissage chez lui</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1712-03-01"/>
+                        <event>Arrêt du Conseil d'État commettant Nicolas Dulin à l'inspection et contrôle des bâtiments, réparations et constructions de l'hôtel des Monnaies.</event>
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="1718-03-31"/>
+                        <event>Brevet du roi portant nomination de Nicolas Dulin à l'Académie royale d'architecture (2e classe)</event>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/apprenticeTo" xlink:type="simple">
+                <!-- apprenti -->
+                <relationEntry>Léveillé, Michel</relationEntry>
+            </cpfRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

@@ -2,7 +2,7 @@
 <?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
 <eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
     <control>
-        <recordId>EXPERTS_SAMPLE_FICTIF03</recordId>
+        <recordId>EXPERTS_SAMPLE_03</recordId>
         <maintenanceStatus>new</maintenanceStatus>
         <publicationStatus>inProcess</publicationStatus>
         <maintenanceAgency>
@@ -46,7 +46,7 @@
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
-                <eventDateTime standardDateTime="2018-06-08"></eventDateTime>
+                <eventDateTime standardDateTime="2018-06-08"/>
                 <agentType>human</agentType>
                 <agent>Josselin Morvan</agent>
             </maintenanceEvent>
@@ -234,7 +234,7 @@
                 <!-- beau-frère -->
                 <relationEntry>Robillard, Michel</relationEntry>
             </cpfRelation>
-            
+
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/mentorOf" xlink:type="simple">
                 <!-- maître d’apprentissage  -->
                 <relationEntry>Bachelier, Charles-François</relationEntry>

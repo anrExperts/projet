@@ -2,7 +2,7 @@
 <?xml-model href="../schema/eac.rnc" type="application/relax-ng-compact-syntax"?>
 <eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-33-4">
     <control>
-        <recordId>EXPERTS_SAMPLE_FICTIF02</recordId>
+        <recordId>EXPERTS_SAMPLE_02</recordId>
         <maintenanceStatus>new</maintenanceStatus>
         <publicationStatus>inProcess</publicationStatus>
         <maintenanceAgency>
@@ -47,9 +47,16 @@
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
-                <eventDateTime standardDateTime="2018-06-08"></eventDateTime>
+                <eventDateTime standardDateTime="2018-06-08"/>
                 <agentType>human</agentType>
                 <agent>Josselin Morvan</agent>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2018-06-20"/>
+                <agentType>human</agentType>
+                <agent>Josselin Morvan</agent>
+                <eventDescription>ajout des informations sur le patrimoine de Jean-Pierre Ango</eventDescription>
             </maintenanceEvent>
         </maintenanceHistory>
         <sources>
@@ -81,6 +88,9 @@
             </source>
             <source>
                 <sourceEntry>Archives de Paris, D4B6 94 6509</sourceEntry>
+                <descriptiveNote>
+                    <p>Faillite.</p>
+                </descriptiveNote>
             </source>
             <source>
                 <sourceEntry>« Nouveaux souscripteurs proposés à l’assemblée du 13 fév 1778 »AN T160/18 et « Société d’Emulation. Situation de la Caisse de Mars 1778 » AN T160/22</sourceEntry>
@@ -125,6 +135,27 @@
                     <p>Inventaire après décès de Jean Pierre Ango, demeurant quai de l'Ecole, n° 16, 11 mars 1815 (notaire : Vincent Fournier-Verneuil)</p>
                 </descriptiveNote>
             </source>
+            <source>
+                <sourceEntry>AN, Y5285, 28 août 1773</sourceEntry>
+                <descriptiveNote>
+                    <p>Inventaire après décès de Marie Angélique Vallée, épouse de Jean-Pierre Angot.</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>AN, Y5135B, 29 novembre 1785.</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>AN, Y748, fol. 168.</sourceEntry>
+                <descriptiveNote>
+                    <p>Contrat de mariage entre Jean-Pierre Angot et Marie Éléonore Julie Langlantier</p>
+                </descriptiveNote>
+            </source>
+            <source>
+                <sourceEntry>AN Y 5175A, 14 février 1789</sourceEntry>
+                <descriptiveNote>
+                    <p>Jean-Pierre Ango est autorisé à vendre sa maison de la rue Saint-Victor à l’audience des criées du Châtelet.</p>
+                </descriptiveNote>
+            </source>
         </sources>
     </control>
     <cpfDescription>
@@ -149,22 +180,16 @@
         </identity>
         <description>
             <existDates>
-                <!-- exemple de gestion pour la contradiction de sources. -->
-                <dateSet>
-                    <date localType="birth" standardDate="1739-11-13"/>
-                    <!-- V/1/459 -->
-                    <date localType="death" standardDate="1824-04-03"/>
-                    <date localType="death" notAfter="1815-03-11"/>
-                    <!-- MC/ET/LXXXIV/789 -->
-                </dateSet>
-                <descriptiveNote>
-                    <p>L’état-civil reconstitué de Paris (en ligne), signale le décès d'un Jean Pierre Angot le 3 avril 1824. Toutefois, nous avons retrouvé au Minutier central, dans les minutes du notaire Vincent Fournier-Verneuil (cote MC/ET/LXXXIV/789), un « Inventaire après décès de Jean Pierre Ango, demeurant quai de l'Ecole, n° 16 », en date du « 11 mars 1815 ».</p>
-                </descriptiveNote>
+                <dateRange>
+                    <fromDate standardDate="1739-11-13"/>
+                    <toDate notAfter="1815-03-11"/>
+                </dateRange>
             </existDates>
             <places>
                 <place>
                     <placeRole>Naissance</placeRole>
                     <placeEntry>Paris, paroisse de l’église de Saint-Victor</placeEntry>
+                    <date standardDate="1739-11"/>
                     <!-- V/1/459 -->
                 </place>
                 <place>
@@ -198,9 +223,37 @@
                     <!-- MC/ET/LXXXIV/789 -->
                 </place>
             </places>
+            <generalContext>
+                <!-- <generalContext/> peut être utilisé pour les données qui ne peuvent pas être décrites dans les autres éléments de <cfpDescription/>  -->
+                <!-- RMQ : peu d'expressivité, très pauvre (p, list, citation, outline) -->
+                <!-- RMQ : il n'est pas possible de spécifier des dates ! -->
+                <p>Angot loue à l’abbé de l’Isle un appartement au 5e étage de la maison qu’il possède rue Saint-Victor.</p>
+                <p>Il a hérité de ses parents (liquidation de la succession de Jean Ango le 27/07/1778 devant Me Belime : MC/ET/XLIII/492) un ensemble de biens dans l’enclos Saint-Victor.</p>
+                <list localType="patrimony">
+                    <!-- RMQ prévoir une solution pour encoder les évaluations (tenir compte de la date et du prix ?). -->
+                    <item>l’office d’ « architecte expert juré » [évalué 6 000 l. t.]</item>
+                    <item>un petit terrain à Marly [évalué 1 500 l. t.]</item>
+                    <item>150 l. t. de rente sur les aides et gabelles</item>
+                    <item>la nue propriété de 270 l. t. de rente au principal de 5 400 l. due par Lienard [5 400 l. t.]</item>
+                    <item>une grande maison rue Saint-Victor à Paris, provenant de la succession de ses parents [évaluée 120 000 l. t.]</item>
+                    <item>Actif mobilier évalué : 58 860 l. t.</item>
+                    <item>Actif immobilier évalué : 132 900 l. t.</item>
+                    <item>Total : 191 760 l. t.</item>
+                    <item>Total du passif : 162 833 l. 93 s.</item>
+                </list>
+                <list localType="mortgagee">
+                    <!-- à placer dans les relations ? voir plus bas -->
+                    <item>le sieur Gautier</item>
+                    <item>la succession de Jacques Angot</item>
+                    <item>la dame Le Preux</item>
+                    <item>Julie Thérèse Ango, sa fille</item>
+                    <item>la compagnie des jurés experts</item>
+                </list>
+                <p>En annexe : mention de la compagnie des experts jurés qui relate la délibération du 31/10/1784 affirmant la créance par J. P. Ango de 23 649 l. t. 17 s. 2 d., « pour les reliques de différents comptes de trésorerie depuis l’année 1780 jusques et compris l’année 1782 » (dont ils ont obtenu sentence de condamnation au Châtelet les 17/11/1783 et 12/06/1784) – la compagnie est représentée par Léonard d’Osmond</p>
+            </generalContext>
             <functions localType="expert">
                 <function localType="verified">
-                    <term>Expert entrepreneur</term>    
+                    <term>Expert entrepreneur</term>
                 </function>
                 <function localType="sources">
                     <term>Architecte entrepreneur de bâtiments</term>
@@ -252,6 +305,24 @@
         </description>
         <relations>
             <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <!-- 1re Épouse -->
+                <relationEntry>Vallée, Marie Angélique</relationEntry>
+                <dateRange>
+                    <toDate notAfter="1773-08-26"/>
+                    <!-- IAD -->
+                </dateRange>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/childOf" xlink:type="simple">
+                <!-- Fille -->
+                <relationEntry>Ango, Julie Thérèse</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
+                <!-- 2nd Épouse -->
+                <relationEntry>Langlantier, Marie Éléonore Julie</relationEntry>
+                <date standardDate="1786-05-19"/>
+                <!-- Contrat de mariage -->
+            </cpfRelation>
+            <cpfRelation xlink:arcrole="http://purl.org/vocab/relationship/spouseOf" xlink:type="simple">
                 <!-- Épouse -->
                 <relationEntry>Vallée, Marie Angélique</relationEntry>
             </cpfRelation>
@@ -278,6 +349,25 @@
                     <!--Le Bihan, Françs-maçons parisiens du Grand Orient de France (fin du XVIIIe siècle), Paris, Bibl. Nat., 1966.-->
                 </descriptiveNote>
             </cpfRelation>
+
+            <!-- créanciers ?-->
+            <cpfRelation>
+                <relationEntry>le sieur Gautier</relationEntry>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry>la succession de Jacques Angot</relationEntry>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry>la dame Le Preux</relationEntry>
+            </cpfRelation>
+            <cpfRelation>
+                <!-- répétition (décrite comme sa fille plus haut) -->
+                <relationEntry>Ango, Julie Thérèse</relationEntry>
+            </cpfRelation>
+            <cpfRelation>
+                <relationEntry>la compagnie des jurés experts</relationEntry>
+            </cpfRelation>
+
 
             <!-- Pour ses écrits -->
             <!-- possibilité de passer par la TEI pour les éléments bibliographiques -->
